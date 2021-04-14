@@ -1,0 +1,20 @@
+.header-top {
+    color           : var(--color-white);
+    font-size       : 13px;
+    background-color: var(--color-secondary);
+}
+
+.header-top a:hover {
+    cursor: pointer;
+    transition: var(--transition);
+    color : var(--color-primary) !important;
+}
+
+nav.header-center {
+    font-size       : 14px;
+    background-color: var(--color-white);
+}
+
+nav.header-center a {
+    color: var(--color-secondary);
+}

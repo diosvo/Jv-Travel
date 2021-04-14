@@ -1,0 +1,19 @@
+.txt-primary {
+    color: var(--color-primary) !important;
+}
+
+.txt-secondary {
+    color: var(--color-secondary) !important;
+}
+
+.txt-white {
+    color: var(--color-white);
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}

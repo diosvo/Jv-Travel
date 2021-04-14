@@ -1,0 +1,15 @@
+.btn-details {
+    display: inline-block;
+
+    color  : var(--color-white);
+    padding: 0.5rem 1.5rem;
+
+    border-radius: 3px;
+    background   : var(--color-primary);
+    box-shadow   : 3px 3px 0px 0px rgba(31, 39, 70, 0.87);
+}
+
+.btn-details:hover {
+    transition: var(--transition);
+    color     : var(--bs-white);
+}

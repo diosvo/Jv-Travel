@@ -1,0 +1,15 @@
+ @import './_header.css';
+ @import './utils/utils.css';
+ @import './bootstrap/refactor-bootstrap.css';
+
+ :root {
+     --color-primary  : #21B7CB;
+     --color-secondary: #1F2746;
+     --color-white    : #FFFFFF;
+
+     --transition: 0.2s all ease-in-out;
+ }
+
+ body {
+     font-family: sans-serif !important;
+ }
