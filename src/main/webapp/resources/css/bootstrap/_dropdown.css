@@ -2,3 +2,17 @@
     font-size    : 14px;
     border-bottom: 1px dashed #dbdbdd;
 }
+
+#index .dropdown {
+    border-radius   : .25rem;
+    background-color: var(--color-white);
+}
+
+#index .dropdown .dropdown-toggle {
+    width     : 100%;
+    text-align: left;
+}
+
+#index .dropdown .dropdown-menu {
+    width: 100%;
+}

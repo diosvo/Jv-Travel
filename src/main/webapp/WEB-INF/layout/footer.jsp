@@ -1,13 +1,13 @@
-<!-- <%-- 
+<%-- 
     Author     : diosvo
 --%>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 
-    <%@page contentType="text/html" pageEncoding="UTF-8" %> -->
 <footer>
     <div class="footer-details">
         <div class="container">
             <div class="row py-2 fs-14">
-                <div class="col-md-3 p-4">
+                <div class="col-md-3 py-4 pe-4">
                     <h6 class="text-uppercase fw-bold">Thông tin liên hệ</h6>
                     <p class="fs-14">
                         DV-Travel cam kết nỗ lực hết mình nhằm cung cấp sản phẩm và dịch vụ đúng với những giá trị mà
@@ -88,14 +88,14 @@
                     </ul>
                 </div>
 
-                <div class="col-md-3 p-4">
+                <div class="col-md-3 py-4 ps-4">
                     <h6 class="text-uppercase fw-bold">Đăng ký nhận tin</h6>
                     <p>Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có
                         thể
                         cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.
                     </p>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Nhập địa chỉ email của bạn..." />
+                        <input type="email" class="form-control" placeholder="Nhập địa chỉ email của bạn..." />
                         <button class="btn btn-primary" type="button">
                             <img src="https://img.icons8.com/small/16/FFFFFF/send.png" />
                         </button>
@@ -108,7 +108,7 @@
     <div class="header-top">
         <div class="container">
             <div class="row align-items-baseline fw-bold py-3">
-                <div class="col-md-4">
+                <div class="col-md-4 txt-white">
                     Copyrights © 2021 by
                     <a href="#" class="text-decoration-none txt-white">
                         MyNhung Vo

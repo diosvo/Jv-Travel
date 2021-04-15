@@ -1,12 +1,13 @@
 <%-- Author : diosvo --%>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
+
 <div class="header-container">
     <header>
         <!-- Header Top -->
         <div class="header-top">
             <div class="container">
                 <div class="row align-items-baseline fw-bold py-3">
-                    <div class="col-md-4">
+                    <div class="col-md-4 txt-white">
                         <a href="#" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/phone-message.png" class="me-2" />
                             (+84) 927.719.321
@@ -18,7 +19,7 @@
                         </a>
                     </div>
 
-                    <div class="col-md-8 text-end">
+                    <div class="col-md-8 text-end txt-white">
                         <a class="text-decoration-none txt-white">Dịch vụ hỗ trợ</a>
                         <span class="mx-2">|</span>
                         <a class="text-decoration-none txt-white">FAQs</a>
