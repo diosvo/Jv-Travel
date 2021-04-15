@@ -51,7 +51,7 @@
                         <img src="https://img.icons8.com/color/32/000000/werewolf.png" />
                         <h5 class="fw-bold text-uppercase txt-secondary ms-2 mb-0">
                             <span class="txt-primary">dv</span>
-                            <span class="txt-secondary">-travel</span>
+                            <span class="txt-secondary">- travel</span>
                         </h5>
                     </div>
 
@@ -103,7 +103,7 @@
                 <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
                     class="d-block w-100" alt="image carousel">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚIl</h1>
+                    <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚI</h1>
                     <p class="txt-secondary fs-18 my-3">
                         Hành trình Thổ Nhĩ Kỳ khiến du khách sốc hết từ ngày này sang ngày khác. Đã nghe thoáng qua về
                         bay khinh khí cầu nhưng cũng không thể tưởng tượng nổi nó đẹp đến như thế này. Không hổ danh nơi

@@ -1,10 +1,9 @@
 .header-top {
-    color           : var(--color-white);
     font-size       : 13px;
     background-color: var(--color-secondary);
 }
 
-.header-top a:hover {
+.header-top a:hover, .header-center a:hover {
     cursor: pointer;
     transition: var(--transition);
     color : var(--color-primary) !important;

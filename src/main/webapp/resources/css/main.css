@@ -1,4 +1,5 @@
  @import './_header.css';
+ @import './_footer.css';
  @import './utils/utils.css';
  @import './bootstrap/refactor-bootstrap.css';
 
@@ -6,6 +7,7 @@
      --color-primary  : #21B7CB;
      --color-secondary: #1F2746;
      --color-white    : #FFFFFF;
+     --color-black    : #000000;
 
      --transition: 0.2s all ease-in-out;
  }

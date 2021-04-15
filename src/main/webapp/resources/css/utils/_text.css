@@ -10,6 +10,14 @@
     color: var(--color-white);
 }
 
+.txt-black {
+    color: var(--color-black);
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
 .fs-18 {
     font-size: 18px;
 }
