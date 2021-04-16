@@ -1,15 +1,16 @@
-<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    <%@page contentType="text/html" pageEncoding="UTF-8" %> -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
-<div id="index" class="home py-4">
+<div id="index" class="home mt-4">
     <div class="container">
         <!-- SEARCH FORM -->
         <form class="search-from p-4" style="
             background-color: var(--color-secondary); 
-            color: var(--color-white);">
+            color: var(--color-white);
+            border-radius: 0.25rem;">
 
             <h4 class="text-uppercase fw-bold">
-                <img src="https://img.icons8.com/ios-filled/24/FFFFFF/search--v1.png" />
+                <img src="https://img.icons8.com/ios-filled/24/FFFFFF/search--v1.png" class="me-2" />
                 Tìm tour du lịch
             </h4>
 
@@ -111,21 +112,48 @@
         </form>
 
         <!-- TOURs -->
-        <div class="mt-4">
+        <div class="my-4">
             <h4 class="text-uppercase fw-bold mb-4">
-                <img src="https://img.icons8.com/office/30/000000/airplane-take-off.png" />
+                <img src="https://img.icons8.com/office/30/000000/airplane-take-off.png" class="me-2" />
                 Các tour nổi bật
             </h4>
 
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                            alt="tour-img">
+                        <div class="tour-img">
+                            <div style="position: relative;">
+                                <a href="#" style="
+                                display: block;
+                                overflow: hidden;
+                                ">
+                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
+                                        class="card-img-top" alt="tour-img"
+                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                </a>
+
+                                <span class="d-flex align-items-center txt-white fw-bold" style="
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+    
+                                padding: 0.25rem 1rem;
+                                background: rgba(0, 0, 0, 0.6);
+                                ">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
+                                        class="me-2" />
+                                    Rome, Italia
+                                </span>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <h5 class="card-title fw-bold" style="
-                         text-overflow: ellipsis;
-                        ">Tour Pháp - Lourdes - Italia</h5>
+                                text-overflow: ellipsis;
+                                cursor: pointer;
+                            ">Tour Pháp - Lourdes - Italia</h5>
 
                             <div class="mb-3">
                                 <span>
@@ -154,14 +182,41 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                            alt="tour-img">
+                        <div class="tour-img">
+                            <div style="position: relative;">
+                                <a href="#" style="
+                                display: block;
+                                overflow: hidden;
+                                ">
+                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
+                                        class="card-img-top" alt="tour-img"
+                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                </a>
+
+                                <span class="d-flex align-items-center txt-white fw-bold" style="
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+    
+                                padding: 0.25rem 1rem;
+                                background: rgba(0, 0, 0, 0.6);
+                                ">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
+                                        class="me-2" />
+                                    Rome, Italia
+                                </span>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <h5 class="card-title fw-bold" style="
-                         text-overflow: ellipsis;
-                        ">Tour Pháp - Lourdes - Italia</h5>
+                                text-overflow: ellipsis;
+                                cursor: pointer;
+                            ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="    mb-3">
+                            <div class="mb-3">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -188,14 +243,41 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                            alt="tour-img">
+                        <div class="tour-img">
+                            <div style="position: relative;">
+                                <a href="#" style="
+                                display: block;
+                                overflow: hidden;
+                                ">
+                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
+                                        class="card-img-top" alt="tour-img"
+                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                </a>
+
+                                <span class="d-flex align-items-center txt-white fw-bold" style="
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+    
+                                padding: 0.25rem 1rem;
+                                background: rgba(0, 0, 0, 0.6);
+                                ">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
+                                        class="me-2" />
+                                    Rome, Italia
+                                </span>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <h5 class="card-title fw-bold" style="
-                         text-overflow: ellipsis;
-                        ">Tour Pháp - Lourdes - Italia</h5>
+                                text-overflow: ellipsis;
+                                cursor: pointer;
+                            ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="    mb-3">
+                            <div class="mb-3">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -222,14 +304,41 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                            alt="tour-img">
+                        <div class="tour-img">
+                            <div style="position: relative;">
+                                <a href="#" style="
+                                display: block;
+                                overflow: hidden;
+                                ">
+                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
+                                        class="card-img-top" alt="tour-img"
+                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                </a>
+
+                                <span class="d-flex align-items-center txt-white fw-bold" style="
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+    
+                                padding: 0.25rem 1rem;
+                                background: rgba(0, 0, 0, 0.6);
+                                ">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
+                                        class="me-2" />
+                                    Rome, Italia
+                                </span>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <h5 class="card-title fw-bold" style="
-                         text-overflow: ellipsis;
-                        ">Tour Pháp - Lourdes - Italia</h5>
+                                text-overflow: ellipsis;
+                                cursor: pointer;
+                            ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="    mb-3">
+                            <div class="mb-3">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -256,14 +365,41 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                            alt="tour-img">
+                        <div class="tour-img">
+                            <div style="position: relative;">
+                                <a href="#" style="
+                                display: block;
+                                overflow: hidden;
+                                ">
+                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
+                                        class="card-img-top" alt="tour-img"
+                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                </a>
+
+                                <span class="d-flex align-items-center txt-white fw-bold" style="
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+    
+                                padding: 0.25rem 1rem;
+                                background: rgba(0, 0, 0, 0.6);
+                                ">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
+                                        class="me-2" />
+                                    Rome, Italia
+                                </span>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <h5 class="card-title fw-bold" style="
-                         text-overflow: ellipsis;
-                        ">Tour Pháp - Lourdes - Italia</h5>
+                                text-overflow: ellipsis;
+                                cursor: pointer;
+                            ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="    mb-3">
+                            <div class="mb-3">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -290,14 +426,41 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                            alt="tour-img">
+                        <div class="tour-img">
+                            <div style="position: relative;">
+                                <a href="#" style="
+                                display: block;
+                                overflow: hidden;
+                                ">
+                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
+                                        class="card-img-top" alt="tour-img"
+                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                </a>
+
+                                <span class="d-flex align-items-center txt-white fw-bold" style="
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+    
+                                padding: 0.25rem 1rem;
+                                background: rgba(0, 0, 0, 0.6);
+                                ">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
+                                        class="me-2" />
+                                    Rome, Italia
+                                </span>
+                            </div>
+                        </div>
+
                         <div class="card-body">
                             <h5 class="card-title fw-bold" style="
-                         text-overflow: ellipsis;
-                        ">Tour Pháp - Lourdes - Italia</h5>
+                                text-overflow: ellipsis;
+                                cursor: pointer;
+                            ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="    mb-3">
+                            <div class="mb-3">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -320,10 +483,189 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- INTERESTED NAVIGATION -->
+    <!-- INTERESTED NAVIGATION -->
+    <div class="nagivation" style="
+         background-color: var(--color-secondary); 
+            color: var(--color-white);">
+
+        <div class="container">
+            <div class="py-4">
+                <h4 class="text-uppercase fw-bold mb-0">
+                    <img src="https://img.icons8.com/ios/24/FFFFFF/airplane-landing.png" class="me-2" />
+                    Các điểm đến hấp dẫn
+                </h4>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="border: none;">
+                        <a href="#" style="
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            ">
+                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                                alt="tour-img"
+                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                        </a>
+
+                        <span class="txt-white fw-bold" style="
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+
+                            padding: 0.25rem 0.5rem;
+                            background: rgba(0, 0, 0, 0.6);
+                            ">Rome, Italia</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="border: none;">
+                        <a href="#" style="
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            ">
+                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                                alt="tour-img"
+                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                        </a>
+
+                        <span class="txt-white fw-bold" style="
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+
+                            padding: 0.25rem 0.5rem;
+                            background: rgba(0, 0, 0, 0.6);
+                            ">Rome, Italia</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="border: none;">
+                        <a href="#" style="
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            ">
+                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                                alt="tour-img"
+                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                        </a>
+
+                        <span class="txt-white fw-bold" style="
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+
+                            padding: 0.25rem 0.5rem;
+                            background: rgba(0, 0, 0, 0.6);
+                            ">Rome, Italia</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="border: none;">
+                        <a href="#" style="
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            ">
+                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                                alt="tour-img"
+                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                        </a>
+
+                        <span class="txt-white fw-bold" style="
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+
+                            padding: 0.25rem 0.5rem;
+                            background: rgba(0, 0, 0, 0.6);
+                            ">Rome, Italia</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="border: none;">
+                        <a href="#" style="
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            ">
+                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                                alt="tour-img"
+                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                        </a>
+
+                        <span class="txt-white fw-bold" style="
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+
+                            padding: 0.25rem 0.5rem;
+                            background: rgba(0, 0, 0, 0.6);
+                            ">Rome, Italia</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="border: none;">
+                        <a href="#" style="
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            ">
+                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                                alt="tour-img"
+                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
+                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                        </a>
+
+                        <span class="txt-white fw-bold" style="
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+
+                            padding: 0.25rem 0.5rem;
+                            background: rgba(0, 0, 0, 0.6);
+                            ">Rome, Italia</span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mb-4">
+                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
