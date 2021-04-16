@@ -53,7 +53,7 @@
                         </li>
                         <li>
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Trung Quốc</a>
+                            <a href="#" class="text-decoration-none text-dark ms-1">Italia</a>
                         </li>
                     </ul>
                 </div>

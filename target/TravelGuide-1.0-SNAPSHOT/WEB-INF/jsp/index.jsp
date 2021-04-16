@@ -1,5 +1,5 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@page contentType="text/html" pageEncoding="UTF-8" %> -->
 
 <div id="index" class="home py-4">
     <div class="container">
@@ -25,10 +25,9 @@
                     background-color: var(--color-white);
                     border-radius: .25rem;
                     ">
-                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn dropdown-toggle text-start" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false" style="
                             width:100%;
-                            text-align: left;
                             ">
                             Tất cả
                         </a>
@@ -49,10 +48,9 @@
                     background-color: var(--color-white);
                     border-radius: .25rem;
                     ">
-                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn dropdown-toggle text-start" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false" style="
                             width:100%;
-                            text-align: left;
                             ">
                             Tất cả
                         </a>
@@ -71,10 +69,9 @@
                     background-color: var(--color-white);
                     border-radius: .25rem;
                     ">
-                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn dropdown-toggle text-start" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false" style="
                             width:100%;
-                            text-align: left;
                             ">
                             Tất cả
                         </a>
@@ -114,5 +111,219 @@
         </form>
 
         <!-- TOURs -->
+        <div class="mt-4">
+            <h4 class="text-uppercase fw-bold mb-4">
+                <img src="https://img.icons8.com/office/30/000000/airplane-take-off.png" />
+                Các tour nổi bật
+            </h4>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                            alt="tour-img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="
+                         text-overflow: ellipsis;
+                        ">Tour Pháp - Lourdes - Italia</h5>
+
+                            <div class="mb-3">
+                                <span>
+                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
+                                    10 ngày 9 đêm
+                                </span>
+                                <span class="mx-2">|</span>
+                                <span>
+                                    Phương tiện:
+                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
+                                        title="Plane" class="ms-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
+                                        class="mx-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <h5 class="text-danger fw-bold">64,990,000</h5>
+                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                    tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                            alt="tour-img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="
+                         text-overflow: ellipsis;
+                        ">Tour Pháp - Lourdes - Italia</h5>
+
+                            <div class="    mb-3">
+                                <span>
+                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
+                                    10 ngày 9 đêm
+                                </span>
+                                <span class="mx-2">|</span>
+                                <span>
+                                    Phương tiện:
+                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
+                                        title="Plane" class="ms-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
+                                        class="mx-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <h5 class="text-danger fw-bold">64,990,000</h5>
+                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                    tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                            alt="tour-img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="
+                         text-overflow: ellipsis;
+                        ">Tour Pháp - Lourdes - Italia</h5>
+
+                            <div class="    mb-3">
+                                <span>
+                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
+                                    10 ngày 9 đêm
+                                </span>
+                                <span class="mx-2">|</span>
+                                <span>
+                                    Phương tiện:
+                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
+                                        title="Plane" class="ms-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
+                                        class="mx-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <h5 class="text-danger fw-bold">64,990,000</h5>
+                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                    tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                            alt="tour-img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="
+                         text-overflow: ellipsis;
+                        ">Tour Pháp - Lourdes - Italia</h5>
+
+                            <div class="    mb-3">
+                                <span>
+                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
+                                    10 ngày 9 đêm
+                                </span>
+                                <span class="mx-2">|</span>
+                                <span>
+                                    Phương tiện:
+                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
+                                        title="Plane" class="ms-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
+                                        class="mx-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <h5 class="text-danger fw-bold">64,990,000</h5>
+                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                    tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                            alt="tour-img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="
+                         text-overflow: ellipsis;
+                        ">Tour Pháp - Lourdes - Italia</h5>
+
+                            <div class="    mb-3">
+                                <span>
+                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
+                                    10 ngày 9 đêm
+                                </span>
+                                <span class="mx-2">|</span>
+                                <span>
+                                    Phương tiện:
+                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
+                                        title="Plane" class="ms-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
+                                        class="mx-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <h5 class="text-danger fw-bold">64,990,000</h5>
+                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                    tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
+                            alt="tour-img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="
+                         text-overflow: ellipsis;
+                        ">Tour Pháp - Lourdes - Italia</h5>
+
+                            <div class="    mb-3">
+                                <span>
+                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
+                                    10 ngày 9 đêm
+                                </span>
+                                <span class="mx-2">|</span>
+                                <span>
+                                    Phương tiện:
+                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
+                                        title="Plane" class="ms-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
+                                        class="mx-2" />
+                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
+                                </span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <h5 class="text-danger fw-bold">64,990,000</h5>
+                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                    tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INTERESTED NAVIGATION -->
     </div>
 </div>
