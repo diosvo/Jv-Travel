@@ -1,6 +1,68 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
+<!-- Carousel -->
+<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
+                class="d-block w-100" alt="image carousel">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚI</h1>
+                <p class="txt-secondary fs-18 my-3">
+                    Hành trình Thổ Nhĩ Kỳ khiến du khách sốc hết từ ngày này sang ngày khác. Đã nghe thoáng qua về
+                    bay khinh khí cầu nhưng cũng không thể tưởng tượng nổi nó đẹp đến như thế này. Không hổ danh nơi
+                    bay khinh khí cầu đẹp nhất thế giới.
+                    .</p>
+                <button class="btn">
+                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
+                        tiết</a>
+                </button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
+                class="d-block w-100" alt="image carousel">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚIl</h1>
+                <p class="txt-secondary fs-18 my-3">
+                    Hành trình Thổ Nhĩ Kỳ khiến du khách sốc hết từ ngày này sang ngày khác. Đã nghe thoáng qua về
+                    bay khinh khí cầu nhưng cũng không thể tưởng tượng nổi nó đẹp đến như thế này. Không hổ danh nơi
+                    bay khinh khí cầu đẹp nhất thế giới.
+                    .</p>
+                <button class="btn">
+                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
+                        tiết</a>
+                </button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
+                class="d-block w-100" alt="image carousel">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚIl</h1>
+                <p class="txt-secondary fs-18 my-3">
+                    Hành trình Thổ Nhĩ Kỳ khiến du khách sốc hết từ ngày này sang ngày khác. Đã nghe thoáng qua về
+                    bay khinh khí cầu nhưng cũng không thể tưởng tượng nổi nó đẹp đến như thế này. Không hổ danh nơi
+                    bay khinh khí cầu đẹp nhất thế giới.
+                    .</p>
+                <button class="btn">
+                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
+                        tiết</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
 <div id="index" class="home mt-4">
     <div class="container">
         <!-- SEARCH FORM -->
@@ -26,14 +88,12 @@
                     background-color: var(--color-white);
                     border-radius: .25rem;
                     ">
-                        <a class="btn dropdown-toggle text-start" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" style="
-                            width:100%;
-                            ">
+                        <a class="btn dropdown-toggle text-start w-100" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Tất cả
                         </a>
 
-                        <ul class="dropdown-menu" style="width:100%">
+                        <ul class="dropdown-menu w-100">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -49,14 +109,12 @@
                     background-color: var(--color-white);
                     border-radius: .25rem;
                     ">
-                        <a class="btn dropdown-toggle text-start" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" style="
-                            width:100%;
-                            ">
+                        <a class="btn dropdown-toggle text-start w-100" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Tất cả
                         </a>
 
-                        <ul class="dropdown-menu" style="width:100%">
+                        <ul class="dropdown-menu w-100">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -70,14 +128,12 @@
                     background-color: var(--color-white);
                     border-radius: .25rem;
                     ">
-                        <a class="btn dropdown-toggle text-start" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" style="
-                            width:100%;
-                            ">
+                        <a class="btn dropdown-toggle text-start w-100" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Tất cả
                         </a>
 
-                        <ul class="dropdown-menu" style="width:100%">
+                        <ul class="dropdown-menu w-100">
                             <li><a class="dropdown-item" href="#">Tháng 1</a></li>
                             <li><a class="dropdown-item" href="#">Tháng 2</a></li>
                             <li><a class="dropdown-item" href="#">Tháng 3</a></li>
@@ -97,8 +153,7 @@
                 <div class="col">
                     <label class="form-label" style="opacity: 0;">Tìm tour</label>
                     <div>
-                        <button class="btn text-uppercase fw-bold" style="
-                    width:100%;
+                        <button class="btn text-uppercase fw-bold w-100" style="
                     letter-spacing: 1px;
 
                     color: var(--color-white);
@@ -664,6 +719,114 @@
 
                 <div class="d-flex justify-content-center align-items-center mb-4">
                     <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEWs -->
+    <div class="container">
+        <div class="row my-4">
+            <div>
+                <h4 class="text-uppercase fw-bold mb-4">
+                    <img src="https://img.icons8.com/office/30/000000/airplane-take-off.png" class="me-2" />
+                    Tin tức nổi bật
+                </h4>
+            </div>
+
+            <!-- Youtube -->
+            <div class="col-md-6">
+                <iframe height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY" class="w-100">
+                </iframe>
+            </div>
+
+            <!-- News -->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                                alt="" class="w-100">
+                        </a>
+                    </div>
+                    <div class="col-md-9 blogs">
+                        <a href="#" class="text-decoration-none fw-bold txt-black">
+                            Điểm nhấn du lịch của Italia</a>
+                        <div>
+                            <span>
+                                <img src="https://img.icons8.com/windows/13/000000/overtime.png" class="me-1" />
+                                26/09/2021
+                            </span>
+                            <span class="mx-2">
+                                <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
+                                    class="me-1" />
+                                MyNhung Vo
+                            </span>
+                            <span>
+                                <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
+                                    class="me-1" />
+                                0
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                                alt="" class="w-100">
+                        </a>
+                    </div>
+                    <div class="col-md-9 blogs">
+                        <a href="#" class="text-decoration-none fw-bold txt-black">
+                            Điểm nhấn du lịch của Italia</a>
+                        <div class="fs-13">
+                            <span>
+                                <img src="https://img.icons8.com/windows/13/000000/overtime.png" class="me-1" />
+                                26/09/2021
+                            </span>
+                            <span class="mx-2">
+                                <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
+                                    class="me-1" />
+                                MyNhung Vo
+                            </span>
+                            <span>
+                                <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
+                                    class="me-1" />
+                                0
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                                alt="" class="w-100">
+                        </a>
+                    </div>
+                    <div class="col-md-9 blogs">
+                        <a href="#" class="text-decoration-none fw-bold txt-black">
+                            Điểm nhấn du lịch của Italia</a>
+                        <div class="fs-13">
+                            <span>
+                                <img src="https://img.icons8.com/windows/13/000000/overtime.png" class="me-1" />
+                                26/09/2021
+                            </span>
+                            <span class="mx-2">
+                                <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
+                                    class="me-1" />
+                                MyNhung Vo
+                            </span>
+                            <span>
+                                <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
+                                    class="me-1" />
+                                0
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

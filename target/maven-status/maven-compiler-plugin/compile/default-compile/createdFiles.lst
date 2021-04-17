@@ -1,5 +1,6 @@
 com\dv\repository\impl\ProductRepositoryImpl.class
 com\dv\configs\DispatcherInit.class
+com\dv\controllers\ProductController.class
 com\dv\service\impl\ProductServiceImpl.class
 com\dv\service\ProductService.class
 com\dv\controllers\HomeController.class

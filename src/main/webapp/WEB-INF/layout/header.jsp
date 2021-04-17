@@ -50,10 +50,12 @@
                 <div class="row align-items-center py-4">
                     <div class="col-md-4 d-flex align-items-center">
                         <img src="https://img.icons8.com/color/32/000000/werewolf.png" />
-                        <h5 class="fw-bold text-uppercase txt-secondary ms-2 mb-0">
-                            <span class="txt-primary">dv</span>
-                            <span class="txt-secondary">- travel</span>
-                        </h5>
+                        <a href="#" class="text-decoration-none">
+                            <h5 class="fw-bold text-uppercase txt-secondary ms-2 mb-0">
+                                <span class="txt-primary">dv</span>
+                                <span class="txt-secondary">- travel</span>
+                            </h5>
+                        </a>
                     </div>
 
                     <div class="col-md-8">
@@ -96,66 +98,4 @@
             </div>
         </nav>
     </header>
-
-    <!-- Carousel -->
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
-                    class="d-block w-100" alt="image carousel">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚI</h1>
-                    <p class="txt-secondary fs-18 my-3">
-                        Hành trình Thổ Nhĩ Kỳ khiến du khách sốc hết từ ngày này sang ngày khác. Đã nghe thoáng qua về
-                        bay khinh khí cầu nhưng cũng không thể tưởng tượng nổi nó đẹp đến như thế này. Không hổ danh nơi
-                        bay khinh khí cầu đẹp nhất thế giới.
-                        .</p>
-                    <button class="btn">
-                        <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
-                            tiết</a>
-                    </button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
-                    class="d-block w-100" alt="image carousel">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚIl</h1>
-                    <p class="txt-secondary fs-18 my-3">
-                        Hành trình Thổ Nhĩ Kỳ khiến du khách sốc hết từ ngày này sang ngày khác. Đã nghe thoáng qua về
-                        bay khinh khí cầu nhưng cũng không thể tưởng tượng nổi nó đẹp đến như thế này. Không hổ danh nơi
-                        bay khinh khí cầu đẹp nhất thế giới.
-                        .</p>
-                    <button class="btn">
-                        <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
-                            tiết</a>
-                    </button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
-                    class="d-block w-100" alt="image carousel">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚIl</h1>
-                    <p class="txt-secondary fs-18 my-3">
-                        Hành trình Thổ Nhĩ Kỳ khiến du khách sốc hết từ ngày này sang ngày khác. Đã nghe thoáng qua về
-                        bay khinh khí cầu nhưng cũng không thể tưởng tượng nổi nó đẹp đến như thế này. Không hổ danh nơi
-                        bay khinh khí cầu đẹp nhất thế giới.
-                        .</p>
-                    <button class="btn">
-                        <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
-                            tiết</a>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 </div>

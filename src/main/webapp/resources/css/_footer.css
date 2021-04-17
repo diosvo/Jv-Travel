@@ -1,9 +1,3 @@
 .footer-details {
     background-color: var(--color-white);
 }
-
-.footer-url a:hover {
-    cursor    : pointer;
-    transition: var(--transition);
-    color     : var(--color-primary) !important;
-}
