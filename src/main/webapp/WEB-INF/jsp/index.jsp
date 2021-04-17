@@ -1,5 +1,5 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@page contentType="text/html" pageEncoding="UTF-8" %> -->
 
 <!-- Carousel -->
 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -66,10 +66,7 @@
 <div id="index" class="home mt-4">
     <div class="container">
         <!-- SEARCH FORM -->
-        <form class="search-from p-4" style="
-            background-color: var(--color-secondary); 
-            color: var(--color-white);
-            border-radius: 0.25rem;">
+        <form class="search-from p-4 bg-blue txt-white" style="border-radius: 0.25rem;">
 
             <h4 class="text-uppercase fw-bold">
                 <img src="https://img.icons8.com/ios-filled/24/FFFFFF/search--v1.png" class="me-2" />
@@ -548,10 +545,7 @@
     </div>
 
     <!-- INTERESTED NAVIGATION -->
-    <div class="nagivation" style="
-         background-color: var(--color-secondary); 
-            color: var(--color-white);">
-
+    <div class="nagivation bg-blue txt-white">
         <div class="container">
             <div class="py-4">
                 <h4 class="text-uppercase fw-bold mb-0">
@@ -827,6 +821,128 @@
                             </span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR PARTNER -->
+    <div class="bg-blue txt-white">
+        <div class="container">
+            <div class="pt-4">
+                <h4 class="text-uppercase fw-bold mb-0">
+                    <img src="https://img.icons8.com/ios/24/FFFFFF/airplane-landing.png" class="me-2" />
+                    Đối tác của chúng tôi
+                </h4>
+            </div>
+
+            <div class="row py-4">
+                <div class="col-md-2">
+                    <a href="#" class="text-center" style="
+                    display: block;
+                    height: 100px;
+                    border-radius: 0.5rem;
+
+                    background: #FFF;
+                    border-style: double;
+                    border-color: #dbdbdd;
+                    ">
+                        <img src="https://ir.ebaystatic.com/cr/v/c1/ebay-logo-1-1200x630-margin.png" alt="partner-img"
+                            style="filter: grayscale(100%)"
+                            onmouseout="this.style.filter='grayscale(100%)';this.style.transition='all 0.3s ease' "
+                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
+                            class="w-100">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#" class="text-center" style="
+                    display: block;
+                    height: 100px;
+                    border-radius: 0.5rem;
+
+                    background: #FFF;
+                    border-style: double;
+                    border-color: #dbdbdd;
+                    ">
+                        <img src="https://www.marketeers.com/wp-content/uploads/2017/08/Traveloka_Primary_Logo.png"
+                            alt="partner-img" style="filter: grayscale(100%)"
+                            onmouseout="this.style.filter='grayscale(100%';this.style.transition='all 0.3s ease' "
+                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
+                            class="w-100">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#" class="text-center" style="
+                    display: block;
+                    height: 100px;
+                    border-radius: 0.5rem;
+
+                    background: #FFF;
+                    border-style: double;
+                    border-color: #dbdbdd;
+                    ">
+                        <img src="https://gixnetwork.org/wp-content/uploads/2019/04/Microsoft-logo_rgb_gray.png"
+                            alt="partner-img" style="filter: grayscale(100%)"
+                            onmouseout="this.style.filter='grayscale(100%)';this.style.transition='all 0.3s ease' "
+                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
+                            class="w-100">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#" class="text-center" style="
+                    display: block;
+                    height: 100px;
+                    border-radius: 0.5rem;
+
+                    background: #FFF;
+                    border-style: double;
+                    border-color: #dbdbdd;
+                    ">
+                        <img src="https://ir.ebaystatic.com/cr/v/c1/ebay-logo-1-1200x630-margin.png" alt="partner-img"
+                            style="filter: grayscale(100%)"
+                            onmouseout="this.style.filter='grayscale(100%)';this.style.transition='all 0.3s ease' "
+                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
+                            class="w-100">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#" class="text-center" style="
+                    display: block;
+                    height: 100px;
+                    border-radius: 0.5rem;
+
+                    background: #FFF;
+                    border-style: double;
+                    border-color: #dbdbdd;
+                    ">
+                        <img src="https://www.marketeers.com/wp-content/uploads/2017/08/Traveloka_Primary_Logo.png"
+                            alt="partner-img" style="filter: grayscale(100%)"
+                            onmouseout="this.style.filter='grayscale(100%';this.style.transition='all 0.3s ease' "
+                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
+                            class="w-100">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#" class="text-center" style="
+                    display: block;
+                    height: 100px;
+                    border-radius: 0.5rem;
+
+                    background: #FFF;
+                    border-style: double;
+                    border-color: #dbdbdd;
+                    ">
+                        <img src="https://gixnetwork.org/wp-content/uploads/2019/04/Microsoft-logo_rgb_gray.png"
+                            alt="partner-img" style="filter: grayscale(100%)"
+                            onmouseout="this.style.filter='grayscale(100%)';this.style.transition='all 0.3s ease' "
+                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
+                            class="w-100">
+                    </a>
                 </div>
             </div>
         </div>

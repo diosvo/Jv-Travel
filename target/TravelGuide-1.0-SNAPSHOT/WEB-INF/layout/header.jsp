@@ -4,7 +4,7 @@
 <div class="header-container">
     <header>
         <!-- Header Top -->
-        <div class="header-top">
+        <div class="header-top bg-blue">
             <div class="container">
                 <div class="row align-items-baseline fw-bold py-3">
                     <div class="col-md-4 txt-white">
