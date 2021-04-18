@@ -18,6 +18,14 @@
     background-color: var(--color-secondary);
 }
 
+.bg-white {
+    background-color: var(--color-white);
+}
+
+.bg-light-gray {
+    background-color: var(--color-light-gray);
+}
+
 .fs-13 {
     font-size: 13px;
 }

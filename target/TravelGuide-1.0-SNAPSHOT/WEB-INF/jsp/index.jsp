@@ -1,5 +1,5 @@
-<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    <%@page contentType="text/html" pageEncoding="UTF-8" %> -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
 <!-- Carousel -->
 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -63,6 +63,7 @@
     </button>
 </div>
 
+<!-- About TOURs -->
 <div id="index" class="home mt-4">
     <div class="container">
         <!-- SEARCH FORM -->
@@ -207,7 +208,7 @@
                                 cursor: pointer;
                             ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="mb-3">
+                            <div class="mb-3 fs-14">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -221,6 +222,8 @@
                                         class="mx-2" />
                                     <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                                 </span>
+
+                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-baseline">
@@ -268,7 +271,7 @@
                                 cursor: pointer;
                             ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="mb-3">
+                            <div class="mb-3 fs-14">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -282,6 +285,8 @@
                                         class="mx-2" />
                                     <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                                 </span>
+
+                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-baseline">
@@ -329,7 +334,7 @@
                                 cursor: pointer;
                             ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="mb-3">
+                            <div class="mb-3 fs-14">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -343,6 +348,8 @@
                                         class="mx-2" />
                                     <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                                 </span>
+
+                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-baseline">
@@ -390,7 +397,7 @@
                                 cursor: pointer;
                             ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="mb-3">
+                            <div class="mb-3 fs-14">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -404,6 +411,8 @@
                                         class="mx-2" />
                                     <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                                 </span>
+
+                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-baseline">
@@ -451,7 +460,7 @@
                                 cursor: pointer;
                             ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="mb-3">
+                            <div class="mb-3 fs-14">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -465,6 +474,8 @@
                                         class="mx-2" />
                                     <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                                 </span>
+
+                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-baseline">
@@ -512,7 +523,7 @@
                                 cursor: pointer;
                             ">Tour Pháp - Lourdes - Italia</h5>
 
-                            <div class="mb-3">
+                            <div class="mb-3 fs-14">
                                 <span>
                                     <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
                                     10 ngày 9 đêm
@@ -526,6 +537,8 @@
                                         class="mx-2" />
                                     <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                                 </span>
+
+                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
                             </div>
 
                             <div class="d-flex justify-content-between align-items-baseline">

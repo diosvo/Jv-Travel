@@ -8,11 +8,12 @@
      --color-secondary: #1F2746;
      --color-white    : #FFFFFF;
      --color-black    : #000000;
+     --color-light-gray : #F0F2F5;
 
      --transition: 0.2s all ease-in-out;
  }
 
  body {
      font-family     : sans-serif !important;
-     background-color: #F0F2F5 !important;
+     background-color: var(--color-light-gray) !important;
  }

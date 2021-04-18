@@ -1,11 +1,13 @@
 .header-top {
-    font-size       : 13px;
+    font-size: 13px;
 }
 
 .header-top a:hover,
 .header-center a:hover,
 .footer-url a:hover,
-.blogs a:hover {
+.blogs a:hover,
+.card-body h5:hover,
+.bread-crumb a:hover {
     cursor    : pointer;
     transition: var(--transition);
     color     : var(--color-primary) !important;
