@@ -1,5 +1,5 @@
-<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page contentType="text/html" pageEncoding="UTF-8" %> -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 
 <div class="container">
     <div class="py-2 fs-14">
@@ -11,11 +11,11 @@
     </div>
 
     <!-- PRODUCT_DETAILS -->
-    <div class="row bg-white p-3" style="border-radius: 0.5rem;">
+    <div class="row bg-white px-1 py-3" style="border-radius: 0.5rem;">
         <h5 class="txt-secondary fw-bold">Tour Pháp - Lourdes - Italia</h5>
-        
+
         <span class="fs-14 mt-3 mb-2">
-                <span class="bg-light-gray px-3 py-2"  style="border-radius: 0.5rem;">Mã SKU: DV-2609</span>
+            <span class="bg-light-gray p-3" style="border-radius: 0.5rem;">Mã SKU: DV-2609</span>
         </span>
 
         <div class="fs-14 my-3">
@@ -45,7 +45,50 @@
         </div>
 
         <div>
-            <h4 class="text-danger fw-bold">64,990,000 VNĐ</h4>
+            <h4 class="text-danger fw-bold mb-3">64,990,000 VNĐ</h4>
+        </div>
+
+        <div>
+            <table class="table table-bordered fs-14" style="width:30%">
+                <tbody>
+                    <tr>
+                        <td class="fw-bold">Loại tour</td>
+                        <td>Tiết kiệm</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">Các bữa ăn trong ngày</td>
+                        <td>Ăn uống theo đoàn</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">Bảo hiểm tai nạn</td>
+                        <td>Có bao gồm bảo hiểm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <div class="col-md-2">
+                <label class="fw-bold fs-14">Số lượng</label>
+                <div class="input-group my-2">
+                    <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus btn btn-outline-secondary" data-type="minus"
+                            data-field="">
+                            <span>-</span>
+                        </button>
+                    </span>
+                    <input type="text" id="quantity" name="quantity" class="form-control input-number">
+                    <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus btn btn-outline-secondary" data-type="plus"
+                            data-field="">
+                            <span>+</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <p class="fst-italic fs-13 mb-0"><span class="text-danger">*</span> Nếu quý khách muốn đặt số lượng lớn hơn 10, xin hãy liên hệ với chúng tôi để được giá ưu đãi hơn.</p>    
         </div>
     </div>
 </div>
+
+<script src="<c:url value="js/number-input.js"/>"></script>

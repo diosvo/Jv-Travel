@@ -37,13 +37,15 @@ public class WebConfig implements WebMvcConfigurer {
                 .addResourceLocations("/resources/css/");
         registry.addResourceHandler("/img/**")
                 .addResourceLocations("/resources/images/");
+        registry.addResourceHandler("/js/**")
+                .addResourceLocations("/resources/js/");
     }
 
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource source = new ResourceBundleMessageSource();
         source.setBasename("messages");
-        
+
         return source;
     }
 }
