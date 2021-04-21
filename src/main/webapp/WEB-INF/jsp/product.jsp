@@ -16,11 +16,11 @@
     <div class="row">
         <div class="col-md-12">
             <div class="bg-white bd-radius-half p-3">
-                <h5 class="txt-secondary"><strong>Tour Pháp - Lourdes - Italia</strong></h5>
+                <h5 class="txt-secondary mb-3"><strong>Tour Pháp - Lourdes - Italia</strong></h5>
 
-                <div class="mt-3 mb-2">
-                    <span class="bg-light-gray p-3 bd-radius-half" style="display: inline-block;">Mã SKU: DV-2609</span>
-                </div>
+                <div class="badge text-wrap bg-light-gray txt-black p-3 fs-14 bd-radius-half " style="font-weight: 400;">
+                    Mã SKU: DV-2609
+                  </div>
 
                 <div class="my-3">
                     <span class="bread-crumb">
@@ -98,7 +98,7 @@
                 <div class="mt-3">
                     <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold me-2">Thêm vào giỏ
                         hàng</a>
-                    <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Mua ngay</a>
+                    <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Đặt tour ngay</a>
                 </div>
             </div>
         </div>
@@ -432,7 +432,7 @@
                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
-                            <div class="col-md-8 blogs ps-0">
+                            <div class="col-md-8 blogs">
                                 <a href="/" class="text-decoration-none fw-bold txt-black">
                                     Điểm nhấn du lịch của Italia</a>
                                 <div class="fs-13">
@@ -465,7 +465,7 @@
                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
-                            <div class="col-md-8 blogs ps-0">
+                            <div class="col-md-8 blogs">
                                 <a href="/" class="text-decoration-none fw-bold txt-black">
                                     Điểm nhấn du lịch của Italia</a>
                                 <div class="fs-13">
@@ -498,7 +498,7 @@
                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
-                            <div class="col-md-8 blogs ps-0">
+                            <div class="col-md-8 blogs">
                                 <a href="/" class="text-decoration-none fw-bold txt-black">
                                     Điểm nhấn du lịch của Italia</a>
                                 <div class="fs-13">
@@ -531,7 +531,7 @@
                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
-                            <div class="col-md-8 blogs ps-0">
+                            <div class="col-md-8 blogs">
                                 <a href="/" class="text-decoration-none fw-bold txt-black">
                                     Điểm nhấn du lịch của Italia</a>
                                 <div class="fs-13">
