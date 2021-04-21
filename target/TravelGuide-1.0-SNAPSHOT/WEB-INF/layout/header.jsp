@@ -35,9 +35,9 @@
                             Đăng ký
                         </a>
                         <span class="mx-2">|</span>
-                        <a class="text-decoration-none txt-white">
+                        <a href="/cart" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/paid--v1.png" class="me-2" />
-                            Tour đã đặt
+                            Tour đã đặt (1)
                         </a>
                     </div>
                 </div>
