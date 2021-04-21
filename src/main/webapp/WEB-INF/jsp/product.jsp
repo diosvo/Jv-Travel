@@ -103,7 +103,7 @@
             <div class="accordion" id="tourAccordion">
                 <div class="accordion-item">
                     <h2 class="text-uppercase accordion-header" id="headingOne">
-                        <button class="accordion-button accordion-button bg-blue txt-white text-uppercase fw-bold"
+                        <button class="accordion-button accordion-button txt-primary text-uppercase fw-bold"
                             type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                             aria-controls="collapseOne">
                             Chi tiết tour
@@ -165,7 +165,7 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button accordion-button text-uppercase fw-bold collapsed" type="button"
+                        <button class="accordion-button accordion-button txt-primary text-uppercase fw-bold collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                             aria-controls="collapseTwo">
                             Dịch vụ
@@ -232,7 +232,7 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button accordion-button text-uppercase fw-bold collapsed" type="button"
+                        <button class="accordion-button accordion-button txt-primary text-uppercase fw-bold collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                             aria-controls="collapseThree">
                             Điều kiện khi đăng ký tour
@@ -330,7 +330,7 @@
                             <div class="col-md-4">
                                 <a href="/TravelGuide">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                        alt="" class="w-100">
+                                        alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs ps-0">
@@ -363,7 +363,7 @@
                             <div class="col-md-4">
                                 <a href="/TravelGuide">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                        alt="" class="w-100">
+                                        alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs ps-0">
@@ -396,7 +396,7 @@
                             <div class="col-md-4">
                                 <a href="/TravelGuide">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                        alt="" class="w-100">
+                                        alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs ps-0">
@@ -429,7 +429,7 @@
                             <div class="col-md-4">
                                 <a href="/TravelGuide">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                        alt="" class="w-100">
+                                        alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs ps-0">
