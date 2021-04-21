@@ -3,11 +3,11 @@
 
 <div class="container">
     <div class="py-2 fs-14">
-        <a href="/TravelGuide" class="text-decoration-none txt-black">Trang chủ</a>
+        <a href="/" class="text-decoration-none txt-black">Trang chủ</a>
         <span class="mx-2">></span>
-        <a href="/TravelGuide" class="text-decoration-none txt-black">Sản phẩm</a>
+        <a href="/" class="text-decoration-none txt-black">Sản phẩm</a>
         <span class="mx-2">></span>
-        <a href="/TravelGuide" class="text-decoration-none txt-black">Tour Pháp - Lourdes - Italia</a>
+        <a href="/" class="text-decoration-none txt-black">Tour Pháp - Lourdes - Italia</a>
     </div>
 
     <!-- PRODUCT_DETAILS -->
@@ -21,12 +21,12 @@
         <div class="fs-14 my-3">
             <span class="bread-crumb">
                 Nơi khởi hành:
-                <a href="/TravelGuide" class="text-decoration-none txt-black ms-2">Thành phố Hồ Chí Minh</a>
+                <a href="/" class="text-decoration-none txt-black ms-2">Thành phố Hồ Chí Minh</a>
             </span>
             <span class="mx-2">|</span>
             <span class="bread-crumb">
                 Nơi đến:
-                <a href="/TravelGuide" class="text-decoration-none txt-black ms-2">Italia</a>
+                <a href="/" class="text-decoration-none txt-black ms-2">Italia</a>
             </span>
             <span class="mx-2">|</span>
             <span>
@@ -92,8 +92,8 @@
         </div>
 
         <div class="mt-3">
-            <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold me-2">Thêm vào giỏ hàng</a>
-            <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Mua ngay</a>
+            <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold me-2">Thêm vào giỏ hàng</a>
+            <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Mua ngay</a>
         </div>
     </div>
 
@@ -328,13 +328,13 @@
                     <div class="p-2">
                         <div class="row ">
                             <div class="col-md-4">
-                                <a href="/TravelGuide">
+                                <a href="/">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs ps-0">
-                                <a href="/TravelGuide" class="text-decoration-none fw-bold txt-black">
+                                <a href="/" class="text-decoration-none fw-bold txt-black">
                                     Điểm nhấn du lịch của Italia</a>
                                 <div class="fs-13">
                                     <span>
@@ -361,13 +361,13 @@
                     <div class="p-2">
                         <div class="row ">
                             <div class="col-md-4">
-                                <a href="/TravelGuide">
+                                <a href="/">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs ps-0">
-                                <a href="/TravelGuide" class="text-decoration-none fw-bold txt-black">
+                                <a href="/" class="text-decoration-none fw-bold txt-black">
                                     Điểm nhấn du lịch của Italia</a>
                                 <div class="fs-13">
                                     <span>
@@ -394,13 +394,13 @@
                     <div class="p-2 bd-radius-half">
                         <div class="row ">
                             <div class="col-md-4">
-                                <a href="/TravelGuide">
+                                <a href="/">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs ps-0">
-                                <a href="/TravelGuide" class="text-decoration-none fw-bold txt-black">
+                                <a href="/" class="text-decoration-none fw-bold txt-black">
                                     Điểm nhấn du lịch của Italia</a>
                                 <div class="fs-13">
                                     <span>
@@ -427,13 +427,13 @@
                     <div class="p-2">
                         <div class="row ">
                             <div class="col-md-4">
-                                <a href="/TravelGuide">
+                                <a href="/">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs ps-0">
-                                <a href="/TravelGuide" class="text-decoration-none fw-bold txt-black">
+                                <a href="/" class="text-decoration-none fw-bold txt-black">
                                     Điểm nhấn du lịch của Italia</a>
                                 <div class="fs-13">
                                     <span>
