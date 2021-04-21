@@ -14,6 +14,18 @@
     color     : var(--bs-white);
 }
 
+.btn-search {
+    color         : var(--color-white);
+    background    : var(--color-primary);
+    letter-spacing: 1px;
+}
+
+.btn-account {
+    color         : var(--color-white);
+    background    : var(--color-secondary);
+    letter-spacing: 1px;
+}
+
 .bd-radius-quarter {
     border-radius: 0.25rem;
 }

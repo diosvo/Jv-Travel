@@ -24,13 +24,13 @@
                         <span class="mx-2">|</span>
                         <a class="text-decoration-none txt-white">FAQs</a>
                         <span class="mx-2">|</span>
-                        <a class="text-decoration-none txt-white">
+                        <a href="/account/login" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/login-rounded-right--v1.png"
                                 class="me-2" />
                             Đăng nhập
                         </a>
                         <span class="mx-2">|</span>
-                        <a class="text-decoration-none txt-white">
+                        <a href="/account/register" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/edit-user-male.png" class="me-2" />
                             Đăng ký
                         </a>
