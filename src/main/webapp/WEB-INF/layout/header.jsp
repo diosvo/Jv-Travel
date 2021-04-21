@@ -24,7 +24,7 @@
                         <span class="mx-2">|</span>
                         <a class="text-decoration-none txt-white">FAQs</a>
                         <span class="mx-2">|</span>
-                        <a class="text-decoration-none txt-white">
+                        <a href="/account/login" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/login-rounded-right--v1.png"
                                 class="me-2" />
                             Đăng nhập

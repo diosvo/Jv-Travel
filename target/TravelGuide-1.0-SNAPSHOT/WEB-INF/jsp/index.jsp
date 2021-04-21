@@ -1,5 +1,5 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@page contentType="text/html" pageEncoding="UTF-8" %> -->
 
 <!-- Carousel -->
 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -140,16 +140,9 @@
 
                 <div class="col">
                     <label class="form-label opacity-0">Tìm tour</label>
-                    <div>
-                        <button class="btn text-uppercase fw-bold w-100" style="
-                    letter-spacing: 1px;
-
-                    color: var(--color-white);
-                    background-color: var(--color-primary);
-                    ">
-                            Tìm Tour
-                        </button>
-                    </div>
+                    <a class="btn btn-search text-uppercase fw-bold w-100">
+                        Tìm Tour
+                    </a>
                 </div>
             </div>
         </form>
