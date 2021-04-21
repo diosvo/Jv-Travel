@@ -1,3 +1,4 @@
+com\dv\controllers\cart\CartController.class
 com\dv\service\impl\ProductServiceImpl.class
 com\dv\controllers\HomeController.class
 com\dv\configs\WebConfig.class
