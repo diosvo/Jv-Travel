@@ -11,7 +11,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class AccountController {
 
     @GetMapping("/account/login")
-    public String productView() {
+    public String loginView() {
         return "login";
+    }
+
+    @GetMapping("/account/register")
+    public String registerView() {
+        return "register";
     }
 }
