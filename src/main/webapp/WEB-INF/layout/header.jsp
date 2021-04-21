@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row align-items-baseline fw-bold py-3">
                     <div class="col-md-4 txt-white">
-                        <a href="#" class="text-decoration-none txt-white">
+                        <a href="/TravelGuide" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/phone-message.png" class="me-2" />
                             (+84) 927.719.321
                         </a>
@@ -50,7 +50,7 @@
                 <div class="row align-items-center py-4">
                     <div class="col-md-4 d-flex align-items-center">
                         <img src="https://img.icons8.com/color/32/000000/werewolf.png" />
-                        <a href="#" class="text-decoration-none">
+                        <a href="/TravelGuide" class="text-decoration-none">
                             <h5 class="fw-bold text-uppercase txt-secondary ms-2 mb-0">
                                 <span class="txt-primary">dv</span>
                                 <span class="txt-secondary">- travel</span>
@@ -61,36 +61,36 @@
                     <div class="col-md-8">
                         <ul class="d-flex justify-content-end align-items-baseline text-uppercase list-unstyled m-0">
                             <li class="px-3 py-2">
-                                <a href="/" class="text-decoration-none">Trang chủ</a>
+                                <a href="/TravelGuide" class="text-decoration-none">Trang chủ</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                <a class="nav-link dropdown-toggle" href="/TravelGuide" id="navbarDarkDropdownMenuLink"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Tất cả các tour
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="/TravelGuide">Action</a></li>
+                                    <li><a class="dropdown-item" href="/TravelGuide">Another action</a></li>
+                                    <li><a class="dropdown-item" href="/TravelGuide">Something else here</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                <a class="nav-link dropdown-toggle" href="/TravelGuide" id="navbarDarkDropdownMenuLink"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Cẩm nang du lịch
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Tin tức</a></li>
-                                    <li><a class="dropdown-item" href="#">Cẩm nang</a></li>
-                                    <li><a class="dropdown-item" href="#">Tour khuyến mãi</a></li>
-                                    <li><a class="dropdown-item" href="#">Review điểm đến</a></li>
+                                    <li><a class="dropdown-item" href="/TravelGuide">Tin tức</a></li>
+                                    <li><a class="dropdown-item" href="/TravelGuide">Cẩm nang</a></li>
+                                    <li><a class="dropdown-item" href="/TravelGuide">Tour khuyến mãi</a></li>
+                                    <li><a class="dropdown-item" href="/TravelGuide">Review điểm đến</a></li>
                                 </ul>
                             </li>
                             <li class="px-3 py-2">
-                                <a href="/" class="text-decoration-none">Giới thiệu</a>
+                                <a href="/TravelGuide" class="text-decoration-none">Giới thiệu</a>
                             </li>
                             <li class="ps-3 py-2">
-                                <a href="/" class="text-decoration-none">Tư vấn</a>
+                                <a href="/TravelGuide" class="text-decoration-none">Tư vấn</a>
                             </li>
                         </ul>
                     </div>

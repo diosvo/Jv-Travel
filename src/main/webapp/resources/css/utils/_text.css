@@ -7,7 +7,7 @@
 }
 
 .txt-white {
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 
 .txt-black {
@@ -15,7 +15,7 @@
 }
 
 .bg-blue {
-    background-color: var(--color-secondary);
+    background-color: var(--color-secondary) !important;
 }
 
 .bg-white {

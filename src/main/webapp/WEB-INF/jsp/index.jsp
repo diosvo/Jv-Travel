@@ -15,7 +15,7 @@
                     bay khinh khí cầu đẹp nhất thế giới.
                     .</p>
                 <button class="btn">
-                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
+                    <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
                         tiết</a>
                 </button>
             </div>
@@ -31,7 +31,7 @@
                     bay khinh khí cầu đẹp nhất thế giới.
                     .</p>
                 <button class="btn">
-                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
+                    <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
                         tiết</a>
                 </button>
             </div>
@@ -47,7 +47,7 @@
                     bay khinh khí cầu đẹp nhất thế giới.
                     .</p>
                 <button class="btn">
-                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
+                    <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Xem chi
                         tiết</a>
                 </button>
             </div>
@@ -67,7 +67,7 @@
 <div id="index" class="home mt-4">
     <div class="container">
         <!-- SEARCH FORM -->
-        <form class="search-from p-4 bg-blue txt-white" style="border-radius: 0.25rem;">
+        <form class="search-from p-4 bg-blue bd-radius-quarter txt-white">
 
             <h4 class="text-uppercase fw-bold">
                 <img src="https://img.icons8.com/ios-filled/24/FFFFFF/search--v1.png" class="me-2" />
@@ -82,19 +82,16 @@
 
                 <div class="col-md-4">
                     <label class="form-label">Nơi đến:</label>
-                    <div class="dropdown" style="
-                    background-color: var(--color-white);
-                    border-radius: .25rem;
-                    ">
-                        <a class="btn dropdown-toggle text-start w-100" href="#" role="button" data-bs-toggle="dropdown"
+                    <div class="dropdown bg-white bd-radius-quarter">
+                        <a class="btn dropdown-toggle text-start w-100" href="/TravelGuide" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Tất cả
                         </a>
 
                         <ul class="dropdown-menu w-100">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Action</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Another action</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Something else here</a></li>
                         </ul>
                     </div>
                 </div>
@@ -103,53 +100,46 @@
             <div class="row">
                 <div class="col">
                     <label class="form-label">Nơi khởi hành:</label>
-                    <div class="dropdown" style="
-                    background-color: var(--color-white);
-                    border-radius: .25rem;
-                    ">
-                        <a class="btn dropdown-toggle text-start w-100" href="#" role="button" data-bs-toggle="dropdown"
+                    <div class="dropdown bg-white bd-radius-quarter">
+                        <a class="btn dropdown-toggle text-start w-100" href="/TravelGuide" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Tất cả
                         </a>
 
                         <ul class="dropdown-menu w-100">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Thành phố Hồ Chí Minh</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Thành phố Hà Nội</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col">
                     <label class="form-label"> Thời gian khởi hành:</label>
-                    <div class="dropdown" style="
-                    background-color: var(--color-white);
-                    border-radius: .25rem;
-                    ">
-                        <a class="btn dropdown-toggle text-start w-100" href="#" role="button" data-bs-toggle="dropdown"
+                    <div class="dropdown bg-white bd-radius-quarter">
+                        <a class="btn dropdown-toggle text-start w-100" href="/TravelGuide" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Tất cả
                         </a>
 
                         <ul class="dropdown-menu w-100">
-                            <li><a class="dropdown-item" href="#">Tháng 1</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 2</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 3</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 4</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 5</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 6</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 7</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 8</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 9</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 10</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 11</a></li>
-                            <li><a class="dropdown-item" href="#">Tháng 12</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 1</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 2</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 3</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 4</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 5</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 6</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 7</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 8</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 9</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 10</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 11</a></li>
+                            <li><a class="dropdown-item" href="/TravelGuide">Tháng 12</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col">
-                    <label class="form-label" style="opacity: 0;">Tìm tour</label>
+                    <label class="form-label opacity-0">Tìm tour</label>
                     <div>
                         <button class="btn text-uppercase fw-bold w-100" style="
                     letter-spacing: 1px;
@@ -176,7 +166,7 @@
                     <div class="card">
                         <div class="tour-img">
                             <div style="position: relative;">
-                                <a href="#" style="
+                                <a href="/TravelGuide" style="
                                 display: block;
                                 overflow: hidden;
                                 ">
@@ -228,7 +218,7 @@
 
                             <div class="d-flex justify-content-between align-items-baseline">
                                 <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                     tiết</a>
                             </div>
                         </div>
@@ -239,7 +229,7 @@
                     <div class="card">
                         <div class="tour-img">
                             <div style="position: relative;">
-                                <a href="#" style="
+                                <a href="/TravelGuide" style="
                                 display: block;
                                 overflow: hidden;
                                 ">
@@ -291,7 +281,7 @@
 
                             <div class="d-flex justify-content-between align-items-baseline">
                                 <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                     tiết</a>
                             </div>
                         </div>
@@ -302,7 +292,7 @@
                     <div class="card">
                         <div class="tour-img">
                             <div style="position: relative;">
-                                <a href="#" style="
+                                <a href="/TravelGuide" style="
                                 display: block;
                                 overflow: hidden;
                                 ">
@@ -354,7 +344,7 @@
 
                             <div class="d-flex justify-content-between align-items-baseline">
                                 <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                     tiết</a>
                             </div>
                         </div>
@@ -365,7 +355,7 @@
                     <div class="card">
                         <div class="tour-img">
                             <div style="position: relative;">
-                                <a href="#" style="
+                                <a href="/TravelGuide" style="
                                 display: block;
                                 overflow: hidden;
                                 ">
@@ -417,7 +407,7 @@
 
                             <div class="d-flex justify-content-between align-items-baseline">
                                 <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                     tiết</a>
                             </div>
                         </div>
@@ -428,7 +418,7 @@
                     <div class="card">
                         <div class="tour-img">
                             <div style="position: relative;">
-                                <a href="#" style="
+                                <a href="/TravelGuide" style="
                                 display: block;
                                 overflow: hidden;
                                 ">
@@ -480,7 +470,7 @@
 
                             <div class="d-flex justify-content-between align-items-baseline">
                                 <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                     tiết</a>
                             </div>
                         </div>
@@ -491,7 +481,7 @@
                     <div class="card">
                         <div class="tour-img">
                             <div style="position: relative;">
-                                <a href="#" style="
+                                <a href="/TravelGuide" style="
                                 display: block;
                                 overflow: hidden;
                                 ">
@@ -543,7 +533,7 @@
 
                             <div class="d-flex justify-content-between align-items-baseline">
                                 <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                     tiết</a>
                             </div>
                         </div>
@@ -551,7 +541,7 @@
                 </div>
 
                 <div class="d-flex justify-content-center align-items-center">
-                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
+                    <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
                 </div>
             </div>
         </div>
@@ -570,7 +560,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
-                        <a href="#" style="
+                        <a href="/TravelGuide" style="
                             display: block;
                             position: relative;
                             overflow: hidden;
@@ -596,7 +586,7 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
-                        <a href="#" style="
+                        <a href="/TravelGuide" style="
                             display: block;
                             position: relative;
                             overflow: hidden;
@@ -622,7 +612,7 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
-                        <a href="#" style="
+                        <a href="/TravelGuide" style="
                             display: block;
                             position: relative;
                             overflow: hidden;
@@ -648,7 +638,7 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
-                        <a href="#" style="
+                        <a href="/TravelGuide" style="
                             display: block;
                             position: relative;
                             overflow: hidden;
@@ -674,7 +664,7 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
-                        <a href="#" style="
+                        <a href="/TravelGuide" style="
                             display: block;
                             position: relative;
                             overflow: hidden;
@@ -700,7 +690,7 @@
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
-                        <a href="#" style="
+                        <a href="/TravelGuide" style="
                             display: block;
                             position: relative;
                             overflow: hidden;
@@ -725,7 +715,7 @@
                 </div>
 
                 <div class="d-flex justify-content-center align-items-center mb-4">
-                    <a href="#" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
+                    <a href="/TravelGuide" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
                 </div>
             </div>
         </div>
@@ -751,13 +741,13 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-3">
-                        <a href="#">
+                        <a href="/TravelGuide">
                             <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                                 alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-md-9 blogs">
-                        <a href="#" class="text-decoration-none fw-bold txt-black">
+                        <a href="/TravelGuide" class="text-decoration-none fw-bold txt-black">
                             Điểm nhấn du lịch của Italia</a>
                         <div>
                             <span>
@@ -780,13 +770,13 @@
 
                 <div class="row my-2">
                     <div class="col-md-3">
-                        <a href="#">
+                        <a href="/TravelGuide">
                             <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                                 alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-md-9 blogs">
-                        <a href="#" class="text-decoration-none fw-bold txt-black">
+                        <a href="/TravelGuide" class="text-decoration-none fw-bold txt-black">
                             Điểm nhấn du lịch của Italia</a>
                         <div class="fs-13">
                             <span>
@@ -809,13 +799,13 @@
 
                 <div class="row">
                     <div class="col-md-3">
-                        <a href="#">
+                        <a href="/TravelGuide">
                             <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                                 alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-md-9 blogs">
-                        <a href="#" class="text-decoration-none fw-bold txt-black">
+                        <a href="/TravelGuide" class="text-decoration-none fw-bold txt-black">
                             Điểm nhấn du lịch của Italia</a>
                         <div class="fs-13">
                             <span>
@@ -851,7 +841,7 @@
 
             <div class="row py-4">
                 <div class="col-md-2">
-                    <a href="#" class="text-center" style="
+                    <a href="/TravelGuide" class="text-center" style="
                     display: block;
                     height: 100px;
                     border-radius: 0.5rem;
@@ -869,7 +859,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="#" class="text-center" style="
+                    <a href="/TravelGuide" class="text-center" style="
                     display: block;
                     height: 100px;
                     border-radius: 0.5rem;
@@ -887,7 +877,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="#" class="text-center" style="
+                    <a href="/TravelGuide" class="text-center" style="
                     display: block;
                     height: 100px;
                     border-radius: 0.5rem;
@@ -905,7 +895,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="#" class="text-center" style="
+                    <a href="/TravelGuide" class="text-center" style="
                     display: block;
                     height: 100px;
                     border-radius: 0.5rem;
@@ -923,7 +913,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="#" class="text-center" style="
+                    <a href="/TravelGuide" class="text-center" style="
                     display: block;
                     height: 100px;
                     border-radius: 0.5rem;
@@ -941,7 +931,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="#" class="text-center" style="
+                    <a href="/TravelGuide" class="text-center" style="
                     display: block;
                     height: 100px;
                     border-radius: 0.5rem;

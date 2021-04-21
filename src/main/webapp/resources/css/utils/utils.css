@@ -1,2 +1,6 @@
 @import './_text.css';
 @import './_button.css';
+
+.opacity-0 {
+    opacity: 0;
+}

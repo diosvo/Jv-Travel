@@ -33,27 +33,27 @@
                     <ul class="footer-url list-unstyled">
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Campuchia</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Campuchia</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Singapore</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Singapore</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Thái Lan</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Thái Lan</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Nhật Bản</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Nhật Bản</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Hàn quốc</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Hàn quốc</a>
                         </li>
                         <li>
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Italia</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Italia</a>
                         </li>
                     </ul>
                 </div>
@@ -63,27 +63,27 @@
                     <ul class="footer-url list-unstyled">
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Hà Nội</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Hà Nội</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Hạ Long</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Hạ Long</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Ninh Bình</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Ninh Bình</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Quảng Ninh</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Quảng Ninh</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Lào Cai</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Lào Cai</a>
                         </li>
                         <li>
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="#" class="text-decoration-none text-dark ms-1">Đà Nẵng</a>
+                            <a href="/TravelGuide" class="text-decoration-none text-dark ms-1">Đà Nẵng</a>
                         </li>
                     </ul>
                 </div>
@@ -110,7 +110,7 @@
             <div class="row align-items-baseline fw-bold py-3">
                 <div class="col-md-4 txt-white">
                     Copyrights © 2021 by
-                    <a href="#" class="text-decoration-none txt-white">
+                    <a href="/TravelGuide" class="text-decoration-none txt-white">
                         MyNhung Vo
                     </a>
                 </div>
