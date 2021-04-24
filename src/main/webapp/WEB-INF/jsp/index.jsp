@@ -1,5 +1,5 @@
-<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page contentType="text/html" pageEncoding="UTF-8" %> -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 
 <!-- Carousel -->
 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -115,26 +115,22 @@
 
                 <div class="col">
                     <label class="form-label"> Thời gian khởi hành:</label>
-                    <div class="dropdown bg-white bd-radius-quarter">
-                        <a class="btn dropdown-toggle text-start w-100" href="/" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Tất cả
-                        </a>
+                    <div id="datepicker" class="input-group date bd-radius-quarter" data-date-format="dd-mm-yyyy"> 
+                        <input class="form-control" readonly="" type="text" style="
+                        border-top-right-radius   : inherit;
+                        border-bottom-right-radius: inherit;
 
-                        <ul class="dropdown-menu w-100">
-                            <li><a class="dropdown-item" href="/">Tháng 1</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 2</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 3</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 4</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 5</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 6</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 7</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 8</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 9</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 10</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 11</a></li>
-                            <li><a class="dropdown-item" href="/">Tháng 12</a></li>
-                        </ul>
+                        position: relative;
+                        ">
+                        <span class="input-group-addon">
+                            <img src="https://img.icons8.com/small/16/000000/overtime.png" style="
+                            position: absolute;
+                            top     : 30%;
+                            right   : 0.5rem;
+
+                            cursor: pointer;
+                            "/>
+                        </span>
                     </div>
                 </div>
 
@@ -187,9 +183,8 @@
 
                         <div class="card-body">
                             <a class="text-decoration-none txt-black" href="<c:url value=" /product" />">
-                            <h5 class="card-title fw-bold" style="
+                            <h5 class="card-title fw-bold txt-secondary" style="
                                     text-overflow: ellipsis;
-                                    cursor: pointer;
                                 ">
                                 Tour Pháp - Lourdes - Italia
                             </h5>
@@ -948,3 +943,5 @@
         </div>
     </div>
 </div>
+
+<script src="<c:url value="js/datepicker.js"/>"></script>

@@ -21,8 +21,7 @@
 }
 
 .btn-account {
-    color         : var(--color-white);
-    background    : var(--color-secondary);
+    background    : var(--color-secondary) !important;
     letter-spacing: 1px;
 }
 

@@ -6,7 +6,7 @@
 .header-center a:hover,
 .footer-url a:hover,
 .blogs a:hover,
-.card-body h5:hover,
+.card-body a:hover,
 .bread-crumb a:hover {
     cursor    : pointer;
     transition: var(--transition);

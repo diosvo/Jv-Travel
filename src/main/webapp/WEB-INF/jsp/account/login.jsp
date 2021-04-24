@@ -18,7 +18,9 @@
                 <input type="email" class="form-control" placeholder="Email">
                 <input type="password" class="form-control my-3" placeholder="Password">
                 <div class="text-center fs-14">
-                    <a href="/" class="btn btn-account text-uppercase fw-bold w-100">Đăng nhập</a>
+                    <button class="btn bg-blue">
+                        <a href="/" class="txt-white text-uppercase text-decoration-none fw-bold">Đăng nhập</a>
+                    </button>
                     <p class="mt-3 mb-0">
                         <a href="/" class="txt-secondary">
                             Quay về trang chủ

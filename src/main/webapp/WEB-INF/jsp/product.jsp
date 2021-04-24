@@ -52,8 +52,8 @@
 
                 <h4 class="text-danger mb-3"><strong>64,990,000 VNĐ</strong></h4>
 
-                <div>
-                    <table class="table table-bordered fs-14" style="width:30%">
+                <div class="col-md-4">
+                    <table class="table table-bordered fs-14">
                         <tbody>
                             <tr>
                                 <td class="fw-bold">Loại tour</td>

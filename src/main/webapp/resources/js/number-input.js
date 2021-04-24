@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('.quantity-right-plus').click(function (e) {
         e.preventDefault();
         var quantity = parseInt($('#quantity').val());
