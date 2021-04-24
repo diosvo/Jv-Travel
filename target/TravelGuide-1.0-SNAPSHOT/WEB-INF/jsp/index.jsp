@@ -1,5 +1,5 @@
 <!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    <%@page contentType="text/html" pageEncoding="UTF-8" %> -->
+<%@page contentType="text/html" pageEncoding="UTF-8" %> -->
 
 <!-- Carousel -->
 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -186,10 +186,14 @@
                         </div>
 
                         <div class="card-body">
+                            <a class="text-decoration-none txt-black" href="<c:url value=" /product" />">
                             <h5 class="card-title fw-bold" style="
-                                text-overflow: ellipsis;
-                                cursor: pointer;
-                            ">Tour Pháp - Lourdes - Italia</h5>
+                                    text-overflow: ellipsis;
+                                    cursor: pointer;
+                                ">
+                                Tour Pháp - Lourdes - Italia
+                            </h5>
+                            </a>
 
                             <div class="mb-3 fs-14">
                                 <span>
