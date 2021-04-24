@@ -18,9 +18,10 @@
             <div class="bg-white bd-radius-half p-3">
                 <h5 class="txt-secondary mb-3"><strong>Tour Pháp - Lourdes - Italia</strong></h5>
 
-                <div class="badge text-wrap bg-light-gray txt-black p-3 bd-radius-half " style="font-size:14px; font-weight:normal;">
+                <div class="badge text-wrap bg-light-gray txt-black p-3 bd-radius-half "
+                    style="font-size:14px; font-weight:normal;">
                     Mã SKU: DV-2609
-                  </div>
+                </div>
 
                 <div class="my-3">
                     <span class="bread-crumb">
@@ -553,6 +554,17 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-7">
+            <div class="bg-white p-2 bd-radius-half">
+                <div id="fb-root">
+                    <div class="fb-comments" data-href="http://localhost:8080/product" data-width="725"
+                        data-numposts="5"></div>
                 </div>
             </div>
         </div>
