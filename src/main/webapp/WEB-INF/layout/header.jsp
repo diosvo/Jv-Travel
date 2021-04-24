@@ -35,9 +35,9 @@
                             Đăng ký
                         </a>
                         <span class="mx-2">|</span>
-                        <a class="text-decoration-none txt-white">
+                        <a href="/cart" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/paid--v1.png" class="me-2" />
-                            Tour đã đặt
+                            Tour đã đặt (1)
                         </a>
                     </div>
                 </div>
@@ -69,9 +69,8 @@
                                     Tất cả các tour
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/">Action</a></li>
-                                    <li><a class="dropdown-item" href="/">Another action</a></li>
-                                    <li><a class="dropdown-item" href="/">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Tour Trong Nước</a></li>
+                                    <li><a class="dropdown-item" href="#">Tour Quốc Tế</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">

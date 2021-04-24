@@ -11,7 +11,7 @@
 }
 
 .txt-black {
-    color: var(--color-black);
+    color: var(--color-black) !important;
 }
 
 .bg-blue {
