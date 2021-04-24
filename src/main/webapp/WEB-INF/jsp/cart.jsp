@@ -14,9 +14,9 @@
                 <thead>
                     <tr>
                         <th>Sản phẩm</th>
-                        <th class="text-center">Đơn giá (VNĐ)</th>
+                        <th class="text-center">Đơn giá</th>
                         <th class="text-center">Số lượng</th>
-                        <th class="text-center">Tổng cộng (VNĐ)</th>
+                        <th class="text-center">Thành tiền</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,7 +46,7 @@
                             </div>
                         </td>
                         <td>
-                            <h6 class="text-danger text-center"><strong>64,990,000</strong></h6>
+                            <h6 class="text-danger text-center">₫64,990,000</h6>
                         </td>
                         <td style="width: 10%;">
                             <div class="input-group">
@@ -67,7 +67,7 @@
                             </div>
                         </td>
                         <td>
-                            <h6 class="text-danger text-center"><strong>64,990,000</strong></h6>
+                            <h6 class="text-danger text-center">₫64,990,000</h6>
                         </td>
                     </tr>
             </table>
@@ -75,12 +75,12 @@
             <div class="row">
                 <div class="col-md-7">
                     <textarea class="form-control fs-14" placeholder="Ghi chú"
-                        style="height:80px;  resize: none; "></textarea>
+                        style="height:80px; resize: none; "></textarea>
                 </div>
                 <div class="col-md-5 text-end">
-                    <div class="d-flex align-items-baseline justify-content-end">
-                        Tổng giá trị:
-                        <h4 class="text-danger ms-2"><strong>64,990,000</strong></h4>
+                    <div class="d-flex justify-content-end">
+                        <span class="fs-14 text-secondary">Tổng số tiền (1 sản phẩm):</span>
+                        <h4 class="text-danger ms-2">₫<strong>64,990,000</strong></h4>
                     </div>
                     <div>
                         <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Thanh toán</a>
