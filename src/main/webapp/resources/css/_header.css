@@ -5,7 +5,7 @@
 .header-top a:hover,
 .header-center a:hover,
 .footer-url a:hover,
-.blogs a:hover,
+.card-title:hover,
 .card-body a:hover,
 .bread-crumb a:hover {
     cursor    : pointer;
