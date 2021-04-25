@@ -48,6 +48,8 @@ public class Product implements Serializable {
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date departureDate;
 
+    private String image;
+
     /**
      * @return the product_id
      */
@@ -159,4 +161,19 @@ public class Product implements Serializable {
     public void setDepartureDate(Date departureDate) {
         this.departureDate = departureDate;
     }
+
+    /**
+     * @return the image
+     */
+    public String getImage() {
+        return image;
+    }
+
+    /**
+     * @param image the image to set
+     */
+    public void setImage(String image) {
+        this.image = image;
+    }
+
 }

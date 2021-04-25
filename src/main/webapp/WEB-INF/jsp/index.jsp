@@ -6,7 +6,7 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
-                class="d-block w-100" alt="image carousel">
+                 class="d-block w-100" alt="image carousel">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚI</h1>
                 <p class="txt-secondary fs-18 my-3">
@@ -22,7 +22,7 @@
         </div>
         <div class="carousel-item">
             <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
-                class="d-block w-100" alt="image carousel">
+                 class="d-block w-100" alt="image carousel">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚIl</h1>
                 <p class="txt-secondary fs-18 my-3">
@@ -38,7 +38,7 @@
         </div>
         <div class="carousel-item">
             <img src="https://theme.hstatic.net/1000214004/1000394243/14/ms_banner_img3.jpg?v=1317"
-                class="d-block w-100" alt="image carousel">
+                 class="d-block w-100" alt="image carousel">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="txt-secondary fs-48 fw-bold"> NƠI BAY KHINH KHÍ CẦU <br /> ĐẸP NHẤT THẾ GIỚIl</h1>
                 <p class="txt-secondary fs-18 my-3">
@@ -84,7 +84,7 @@
                     <label class="form-label">Nơi đến:</label>
                     <div class="dropdown bg-white bd-radius-quarter">
                         <a class="btn dropdown-toggle text-start w-100" href="/" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                           aria-expanded="false">
                             Tất cả
                         </a>
 
@@ -102,7 +102,7 @@
                     <label class="form-label">Nơi khởi hành:</label>
                     <div class="dropdown bg-white bd-radius-quarter">
                         <a class="btn dropdown-toggle text-start w-100" href="/" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                           aria-expanded="false">
                             Tất cả
                         </a>
 
@@ -117,19 +117,19 @@
                     <label class="form-label"> Thời gian khởi hành:</label>
                     <div id="datepicker" class="input-group date bd-radius-quarter" data-date-format="dd-mm-yyyy"> 
                         <input class="form-control" readonly="" type="text" style="
-                        border-top-right-radius   : inherit;
-                        border-bottom-right-radius: inherit;
+                               border-top-right-radius   : inherit;
+                               border-bottom-right-radius: inherit;
 
-                        position: relative;
-                        ">
+                               position: relative;
+                               ">
                         <span class="input-group-addon">
                             <img src="https://img.icons8.com/small/16/000000/overtime.png" style="
-                            position: absolute;
-                            top     : 30%;
-                            right   : 0.5rem;
+                                 position: absolute;
+                                 top     : 30%;
+                                 right   : 0.5rem;
 
-                            cursor: pointer;
-                            "/>
+                                 cursor: pointer;
+                                 "/>
                         </span>
                     </div>
                 </div>
@@ -150,391 +150,77 @@
                 Các tour nổi bật
             </h4>
 
+
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="tour-img">
-                            <div style="position: relative;">
-                                <a href="/" style="
-                                display: block;
-                                overflow: hidden;
-                                ">
-                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
-                                        class="card-img-top" alt="tour-img"
-                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                <c:forEach items="${products}" var="p">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="tour-img">
+                                <div style="position: relative;">
+                                    <a href="/" style="
+                                       display: block;
+                                       overflow: hidden;
+                                       ">
+                                        <img src="${p.image}"
+                                             class="card-img-top" alt="tour-img"
+                                             style="height: 275px"
+                                             onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
+                                             onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
+                                    </a>
+
+                                    <span class="d-flex align-items-center txt-white fw-bold" style="
+                                          position: absolute;
+                                          left: 0;
+                                          right: 0;
+                                          bottom: 0;
+
+                                          padding: 0.25rem 1rem;
+                                          background: rgba(0, 0, 0, 0.6);
+                                          ">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
+                                             class="me-2" />
+                                        ${p.destination}
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a class="text-decoration-none txt-black" href="<c:url value=" /product" />">
+                                    <h5 class="card-title fw-bold txt-secondary" style="
+                                        text-overflow: ellipsis;
+                                        ">
+                                        ${p.tourName}
+                                    </h5>
                                 </a>
 
-                                <span class="d-flex align-items-center txt-white fw-bold" style="
-                                position: absolute;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-    
-                                padding: 0.25rem 1rem;
-                                background: rgba(0, 0, 0, 0.6);
-                                ">
-                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
-                                        class="me-2" />
-                                    Rome, Italia
-                                </span>
-                            </div>
-                        </div>
+                                <div class="mb-3 fs-14">
+                                    <span>
+                                        <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
+                                        ${p.durationNight + 1} ngày ${p.durationNight} đêm
+                                    </span>
+                                    <span class="mx-2">|</span>
+                                    <span>
+                                        Phương tiện:
+                                        <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
+                                             title="Plane" class="ms-2" />
+                                        <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
+                                             class="mx-2" />
+                                        <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
+                                    </span>
 
-                        <div class="card-body">
-                            <a class="text-decoration-none txt-black" href="<c:url value=" /product" />">
-                            <h5 class="card-title fw-bold txt-secondary" style="
-                                    text-overflow: ellipsis;
-                                ">
-                                Tour Pháp - Lourdes - Italia
-                            </h5>
-                            </a>
+                                    <p class="my-2">Khởi hành: ${p.departureDate} lúc 09:00 tại TP. Hồ Chí Minh</p>
+                                </div>
 
-                            <div class="mb-3 fs-14">
-                                <span>
-                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
-                                    10 ngày 9 đêm
-                                </span>
-                                <span class="mx-2">|</span>
-                                <span>
-                                    Phương tiện:
-                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
-                                        title="Plane" class="ms-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
-                                        class="mx-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
-                                </span>
-
-                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-baseline">
-                                <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
-                                    tiết</a>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <h5 class="text-danger fw-bold">64,990,000</h5>
+                                    <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                        tiết</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </c:forEach>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="tour-img">
-                            <div style="position: relative;">
-                                <a href="/" style="
-                                display: block;
-                                overflow: hidden;
-                                ">
-                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
-                                        class="card-img-top" alt="tour-img"
-                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
-                                </a>
-
-                                <span class="d-flex align-items-center txt-white fw-bold" style="
-                                position: absolute;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-    
-                                padding: 0.25rem 1rem;
-                                background: rgba(0, 0, 0, 0.6);
-                                ">
-                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
-                                        class="me-2" />
-                                    Rome, Italia
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold" style="
-                                text-overflow: ellipsis;
-                                cursor: pointer;
-                            ">Tour Pháp - Lourdes - Italia</h5>
-
-                            <div class="mb-3 fs-14">
-                                <span>
-                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
-                                    10 ngày 9 đêm
-                                </span>
-                                <span class="mx-2">|</span>
-                                <span>
-                                    Phương tiện:
-                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
-                                        title="Plane" class="ms-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
-                                        class="mx-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
-                                </span>
-
-                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-baseline">
-                                <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
-                                    tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="tour-img">
-                            <div style="position: relative;">
-                                <a href="/" style="
-                                display: block;
-                                overflow: hidden;
-                                ">
-                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
-                                        class="card-img-top" alt="tour-img"
-                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
-                                </a>
-
-                                <span class="d-flex align-items-center txt-white fw-bold" style="
-                                position: absolute;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-    
-                                padding: 0.25rem 1rem;
-                                background: rgba(0, 0, 0, 0.6);
-                                ">
-                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
-                                        class="me-2" />
-                                    Rome, Italia
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold" style="
-                                text-overflow: ellipsis;
-                                cursor: pointer;
-                            ">Tour Pháp - Lourdes - Italia</h5>
-
-                            <div class="mb-3 fs-14">
-                                <span>
-                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
-                                    10 ngày 9 đêm
-                                </span>
-                                <span class="mx-2">|</span>
-                                <span>
-                                    Phương tiện:
-                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
-                                        title="Plane" class="ms-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
-                                        class="mx-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
-                                </span>
-
-                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-baseline">
-                                <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
-                                    tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="tour-img">
-                            <div style="position: relative;">
-                                <a href="/" style="
-                                display: block;
-                                overflow: hidden;
-                                ">
-                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
-                                        class="card-img-top" alt="tour-img"
-                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
-                                </a>
-
-                                <span class="d-flex align-items-center txt-white fw-bold" style="
-                                position: absolute;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-    
-                                padding: 0.25rem 1rem;
-                                background: rgba(0, 0, 0, 0.6);
-                                ">
-                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
-                                        class="me-2" />
-                                    Rome, Italia
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold" style="
-                                text-overflow: ellipsis;
-                                cursor: pointer;
-                            ">Tour Pháp - Lourdes - Italia</h5>
-
-                            <div class="mb-3 fs-14">
-                                <span>
-                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
-                                    10 ngày 9 đêm
-                                </span>
-                                <span class="mx-2">|</span>
-                                <span>
-                                    Phương tiện:
-                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
-                                        title="Plane" class="ms-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
-                                        class="mx-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
-                                </span>
-
-                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-baseline">
-                                <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
-                                    tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="tour-img">
-                            <div style="position: relative;">
-                                <a href="/" style="
-                                display: block;
-                                overflow: hidden;
-                                ">
-                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
-                                        class="card-img-top" alt="tour-img"
-                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
-                                </a>
-
-                                <span class="d-flex align-items-center txt-white fw-bold" style="
-                                position: absolute;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-    
-                                padding: 0.25rem 1rem;
-                                background: rgba(0, 0, 0, 0.6);
-                                ">
-                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
-                                        class="me-2" />
-                                    Rome, Italia
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold" style="
-                                text-overflow: ellipsis;
-                                cursor: pointer;
-                            ">Tour Pháp - Lourdes - Italia</h5>
-
-                            <div class="mb-3 fs-14">
-                                <span>
-                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
-                                    10 ngày 9 đêm
-                                </span>
-                                <span class="mx-2">|</span>
-                                <span>
-                                    Phương tiện:
-                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
-                                        title="Plane" class="ms-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
-                                        class="mx-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
-                                </span>
-
-                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-baseline">
-                                <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
-                                    tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="tour-img">
-                            <div style="position: relative;">
-                                <a href="/" style="
-                                display: block;
-                                overflow: hidden;
-                                ">
-                                    <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg"
-                                        class="card-img-top" alt="tour-img"
-                                        onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                        onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
-                                </a>
-
-                                <span class="d-flex align-items-center txt-white fw-bold" style="
-                                position: absolute;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-    
-                                padding: 0.25rem 1rem;
-                                background: rgba(0, 0, 0, 0.6);
-                                ">
-                                    <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
-                                        class="me-2" />
-                                    Rome, Italia
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold" style="
-                                text-overflow: ellipsis;
-                                cursor: pointer;
-                            ">Tour Pháp - Lourdes - Italia</h5>
-
-                            <div class="mb-3 fs-14">
-                                <span>
-                                    <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
-                                    10 ngày 9 đêm
-                                </span>
-                                <span class="mx-2">|</span>
-                                <span>
-                                    Phương tiện:
-                                    <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png"
-                                        title="Plane" class="ms-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/train.png" title="Train"
-                                        class="mx-2" />
-                                    <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
-                                </span>
-
-                                <p class="my-2">Khởi hành: 11/11/2018 - 09:00 AM tại TP. Hồ Chí Minh</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-baseline">
-                                <h5 class="text-danger fw-bold">64,990,000</h5>
-                                <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
-                                    tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center align-items-center">
-                    <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
-                </div>
             </div>
         </div>
     </div>
@@ -553,156 +239,157 @@
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
                         <a href="/" style="
-                            display: block;
-                            position: relative;
-                            overflow: hidden;
-                            ">
+                           display: block;
+                           position: relative;
+                           overflow: hidden;
+                           ">
                             <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                alt="tour-img"
-                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                 alt="tour-img"
+                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
+                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
                         </a>
 
                         <span class="txt-white fw-bold" style="
-                            display: block;
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
+                              display: block;
+                              position: absolute;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
 
-                            padding: 0.25rem 0.5rem;
-                            background: rgba(0, 0, 0, 0.6);
-                            ">Rome, Italia</span>
+                              padding: 0.25rem 0.5rem;
+                              background: rgba(0, 0, 0, 0.6);
+                              ">Rome, Italia</span>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
                         <a href="/" style="
-                            display: block;
-                            position: relative;
-                            overflow: hidden;
-                            ">
+                           display: block;
+                           position: relative;
+                           overflow: hidden;
+                           ">
                             <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                alt="tour-img"
-                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                 alt="tour-img"
+                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
+                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
                         </a>
 
                         <span class="txt-white fw-bold" style="
-                            display: block;
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
+                              display: block;
+                              position: absolute;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
 
-                            padding: 0.25rem 0.5rem;
-                            background: rgba(0, 0, 0, 0.6);
-                            ">Rome, Italia</span>
+                              padding: 0.25rem 0.5rem;
+                              background: rgba(0, 0, 0, 0.6);
+                              ">Rome, Italia</span>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
                         <a href="/" style="
-                            display: block;
-                            position: relative;
-                            overflow: hidden;
-                            ">
+                           display: block;
+                           position: relative;
+                           overflow: hidden;
+                           ">
                             <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                alt="tour-img"
-                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                 alt="tour-img"
+                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
+                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
                         </a>
 
                         <span class="txt-white fw-bold" style="
-                            display: block;
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
+                              display: block;
+                              position: absolute;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
 
-                            padding: 0.25rem 0.5rem;
-                            background: rgba(0, 0, 0, 0.6);
-                            ">Rome, Italia</span>
+                              padding: 0.25rem 0.5rem;
+                              background: rgba(0, 0, 0, 0.6);
+                              ">Rome, Italia</span>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
                         <a href="/" style="
-                            display: block;
-                            position: relative;
-                            overflow: hidden;
-                            ">
+                           display: block;
+                           position: relative;
+                           overflow: hidden;
+                           ">
                             <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                alt="tour-img"
-                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                 alt="tour-img"
+                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
+                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
                         </a>
 
                         <span class="txt-white fw-bold" style="
-                            display: block;
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
+                              display: block;
+                              position: absolute;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
 
-                            padding: 0.25rem 0.5rem;
-                            background: rgba(0, 0, 0, 0.6);
-                            ">Rome, Italia</span>
+                              padding: 0.25rem 0.5rem;
+                              background: rgba(0, 0, 0, 0.6);
+                              ">Rome, Italia</span>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
                         <a href="/" style="
-                            display: block;
-                            position: relative;
-                            overflow: hidden;
-                            ">
+                           display: block;
+                           position: relative;
+                           overflow: hidden;
+                           ">
                             <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                alt="tour-img"
-                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                 alt="tour-img"
+                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
+                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
                         </a>
 
                         <span class="txt-white fw-bold" style="
-                            display: block;
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
+                              display: block;
+                              position: absolute;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
 
-                            padding: 0.25rem 0.5rem;
-                            background: rgba(0, 0, 0, 0.6);
-                            ">Rome, Italia</span>
+                              padding: 0.25rem 0.5rem;
+                              background: rgba(0, 0, 0, 0.6);
+                              ">Rome, Italia</span>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
                     <div class="card" style="border: none;">
                         <a href="/" style="
-                            display: block;
-                            position: relative;
-                            overflow: hidden;
-                            ">
+                           display: block;
+                           position: relative;
+                           overflow: hidden;
+                           ">
                             <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                alt="tour-img"
-                                onmouseover="this.style.transform='scale(1.05)';this.style.transition='all 0.3s ease' "
-                                onmouseout="this.style.transform='scale(1)';this.style.transition='all 0.3s ease'">
+                                 alt="tour-img"
+                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
+                                 onmouseout="this.style.transform = 'scale(1)';
+                                         this.style.transition = 'all 0.3s ease'">
                         </a>
 
                         <span class="txt-white fw-bold" style="
-                            display: block;
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
+                              display: block;
+                              position: absolute;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
 
-                            padding: 0.25rem 0.5rem;
-                            background: rgba(0, 0, 0, 0.6);
-                            ">Rome, Italia</span>
+                              padding: 0.25rem 0.5rem;
+                              background: rgba(0, 0, 0, 0.6);
+                              ">Rome, Italia</span>
                     </div>
                 </div>
 
@@ -735,7 +422,7 @@
                     <div class="col-md-3">
                         <a href="/">
                             <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                alt="" class="w-100 bd-radius-quarter">
+                                 alt="" class="w-100 bd-radius-quarter">
                         </a>
                     </div>
                     <div class="col-md-9 blogs">
@@ -748,12 +435,12 @@
                             </span>
                             <span class="mx-2">
                                 <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
-                                    class="me-1" />
+                                     class="me-1" />
                                 MyNhung Vo
                             </span>
                             <span>
                                 <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
-                                    class="me-1" />
+                                     class="me-1" />
                                 0
                             </span>
                         </div>
@@ -764,7 +451,7 @@
                     <div class="col-md-3">
                         <a href="/">
                             <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                alt="" class="w-100 bd-radius-quarter">
+                                 alt="" class="w-100 bd-radius-quarter">
                         </a>
                     </div>
                     <div class="col-md-9 blogs">
@@ -777,12 +464,12 @@
                             </span>
                             <span class="mx-2">
                                 <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
-                                    class="me-1" />
+                                     class="me-1" />
                                 MyNhung Vo
                             </span>
                             <span>
                                 <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
-                                    class="me-1" />
+                                     class="me-1" />
                                 0
                             </span>
                         </div>
@@ -793,7 +480,7 @@
                     <div class="col-md-3">
                         <a href="/">
                             <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                alt="" class="w-100 bd-radius-quarter">
+                                 alt="" class="w-100 bd-radius-quarter">
                         </a>
                     </div>
                     <div class="col-md-9 blogs">
@@ -806,12 +493,12 @@
                             </span>
                             <span class="mx-2">
                                 <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
-                                    class="me-1" />
+                                     class="me-1" />
                                 MyNhung Vo
                             </span>
                             <span>
                                 <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
-                                    class="me-1" />
+                                     class="me-1" />
                                 0
                             </span>
                         </div>
@@ -834,109 +521,111 @@
             <div class="row py-4">
                 <div class="col-md-2">
                     <a href="/" class="text-center" style="
-                    display: block;
-                    height: 100px;
-                    border-radius: 0.5rem;
+                       display: block;
+                       height: 100px;
+                       border-radius: 0.5rem;
 
-                    background: #FFF;
-                    border-style: double;
-                    border-color: #dbdbdd;
-                    ">
+                       background: #FFF;
+                       border-style: double;
+                       border-color: #dbdbdd;
+                       ">
                         <img src="https://ir.ebaystatic.com/cr/v/c1/ebay-logo-1-1200x630-margin.png" alt="partner-img"
-                            style="filter: grayscale(100%)"
-                            onmouseout="this.style.filter='grayscale(100%)';this.style.transition='all 0.3s ease' "
-                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
-                            class="w-100">
+                             style="filter: grayscale(100%)"
+                             onmouseout="this.style.filter = 'grayscale(100%)';this.style.transition = 'all 0.3s ease'"
+                             onmouseover="this.style.filter = 'grayscale(0%)';this.style.transition = 'all 0.3s ease'"
+                             class="w-100">
                     </a>
                 </div>
 
                 <div class="col-md-2">
                     <a href="/" class="text-center" style="
-                    display: block;
-                    height: 100px;
-                    border-radius: 0.5rem;
+                       display: block;
+                       height: 100px;
+                       border-radius: 0.5rem;
 
-                    background: #FFF;
-                    border-style: double;
-                    border-color: #dbdbdd;
-                    ">
+                       background: #FFF;
+                       border-style: double;
+                       border-color: #dbdbdd;
+                       ">
                         <img src="https://www.marketeers.com/wp-content/uploads/2017/08/Traveloka_Primary_Logo.png"
-                            alt="partner-img" style="filter: grayscale(100%)"
-                            onmouseout="this.style.filter='grayscale(100%';this.style.transition='all 0.3s ease' "
-                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
-                            class="w-100">
+                             alt="partner-img" style="filter: grayscale(100%)"
+                             onmouseout="this.style.filter = 'grayscale(100%';this.style.transition = 'all 0.3s ease'"
+                             onmouseover="this.style.filter = 'grayscale(0%)';this.style.transition = 'all 0.3s ease'"
+                             class="w-100">
                     </a>
                 </div>
 
                 <div class="col-md-2">
                     <a href="/" class="text-center" style="
-                    display: block;
-                    height: 100px;
-                    border-radius: 0.5rem;
+                       display: block;
+                       height: 100px;
+                       border-radius: 0.5rem;
 
-                    background: #FFF;
-                    border-style: double;
-                    border-color: #dbdbdd;
-                    ">
+                       background: #FFF;
+                       border-style: double;
+                       border-color: #dbdbdd;
+                       ">
                         <img src="https://gixnetwork.org/wp-content/uploads/2019/04/Microsoft-logo_rgb_gray.png"
-                            alt="partner-img" style="filter: grayscale(100%)"
-                            onmouseout="this.style.filter='grayscale(100%)';this.style.transition='all 0.3s ease' "
-                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
-                            class="w-100">
+                             alt="partner-img" style="filter: grayscale(100%)"
+                             onmouseout="this.style.filter = 'grayscale(100%)';this.style.transition = 'all 0.3s ease'"
+                             onmouseover="this.style.filter = 'grayscale(0%)';this.style.transition = 'all 0.3s ease'"
+                             class="w-100">
                     </a>
                 </div>
 
                 <div class="col-md-2">
                     <a href="/" class="text-center" style="
-                    display: block;
-                    height: 100px;
-                    border-radius: 0.5rem;
+                       display: block;
+                       height: 100px;
+                       border-radius: 0.5rem;
 
-                    background: #FFF;
-                    border-style: double;
-                    border-color: #dbdbdd;
-                    ">
+                       background: #FFF;
+                       border-style: double;
+                       border-color: #dbdbdd;
+                       ">
                         <img src="https://ir.ebaystatic.com/cr/v/c1/ebay-logo-1-1200x630-margin.png" alt="partner-img"
-                            style="filter: grayscale(100%)"
-                            onmouseout="this.style.filter='grayscale(100%)';this.style.transition='all 0.3s ease' "
-                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
-                            class="w-100">
+                             style="filter: grayscale(100%)"
+                             onmouseout="this.style.filter = 'grayscale(100%)';
+                                     this.style.transition = 'all 0.3s ease'"
+                             onmouseover="this.style.filter = 'grayscale(0%)';
+                                     this.style.transition = 'all 0.3s ease'"
+                             class="w-100">
                     </a>
                 </div>
 
                 <div class="col-md-2">
                     <a href="/" class="text-center" style="
-                    display: block;
-                    height: 100px;
-                    border-radius: 0.5rem;
+                       display: block;
+                       height: 100px;
+                       border-radius: 0.5rem;
 
-                    background: #FFF;
-                    border-style: double;
-                    border-color: #dbdbdd;
-                    ">
+                       background: #FFF;
+                       border-style: double;
+                       border-color: #dbdbdd;
+                       ">
                         <img src="https://www.marketeers.com/wp-content/uploads/2017/08/Traveloka_Primary_Logo.png"
-                            alt="partner-img" style="filter: grayscale(100%)"
-                            onmouseout="this.style.filter='grayscale(100%';this.style.transition='all 0.3s ease' "
-                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
-                            class="w-100">
+                             alt="partner-img" style="filter: grayscale(100%)"
+                             onmouseout="this.style.filter = 'grayscale(100%';this.style.transition = 'all 0.3s ease'"
+                             onmouseover="this.style.filter = 'grayscale(0%)';this.style.transition = 'all 0.3s ease'"
+                             class="w-100">
                     </a>
                 </div>
 
                 <div class="col-md-2">
                     <a href="/" class="text-center" style="
-                    display: block;
-                    height: 100px;
-                    border-radius: 0.5rem;
+                       display: block;
+                       height: 100px;
+                       border-radius: 0.5rem;
 
-                    background: #FFF;
-                    border-style: double;
-                    border-color: #dbdbdd;
-                    ">
+                       background: #FFF;
+                       border-style: double;
+                       border-color: #dbdbdd;
+                       ">
                         <img src="https://gixnetwork.org/wp-content/uploads/2019/04/Microsoft-logo_rgb_gray.png"
-                            alt="partner-img" style="filter: grayscale(100%)"
-                            onmouseout="this.style.filter='grayscale(100%)';this.style.transition='all 0.3s ease' "
-                            onmouseover="this.style.filter='grayscale(0%)';this.style.transition='all 0.3s ease'"
-                            class="w-100">
+                             alt="partner-img" style="filter: grayscale(100%)"
+                             onmouseout="this.style.filter = 'grayscale(100%)';this.style.transition = 'all 0.3s ease'"
+                             onmouseover="this.style.filter = 'grayscale(0%)';this.style.transition = 'all 0.3s ease'"
+                             class="w-100">
                     </a>
                 </div>
             </div>

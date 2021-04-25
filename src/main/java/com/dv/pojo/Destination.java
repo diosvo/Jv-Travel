@@ -23,6 +23,7 @@ public class Destination implements Serializable {
 
     private int destination_id;
     private String destination_name;
+    private String destination_image;
     private boolean abroad;
 
     @OneToMany(mappedBy = "destination", fetch = FetchType.EAGER)
@@ -59,6 +60,20 @@ public class Destination implements Serializable {
      */
     public void setDestination_name(String destination_name) {
         this.destination_name = destination_name;
+    }
+
+    /**
+     * @return the destination_image
+     */
+    public String getDestination_image() {
+        return destination_image;
+    }
+
+    /**
+     * @param destination_image the destination_image to set
+     */
+    public void setDestination_image(String destination_image) {
+        this.destination_image = destination_image;
     }
 
     /**
