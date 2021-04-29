@@ -212,7 +212,7 @@
                                 </div>
 
                                 <div class="d-flex justify-content-between align-items-baseline">
-                                    <h5 class="text-danger fw-bold">64,990,000</h5>
+                                    <h5 class="text-danger fw-bold">${p.price}</h5>
                                     <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                         tiết</a>
                                 </div>
