@@ -21,4 +21,9 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> getProducts(String kw) {
         return this.productRepository.getProducts(kw);
     }
+
+    @Override
+    public Product getProductById(int i) {
+        return this.productRepository.getProductById(i);
+    }
 }

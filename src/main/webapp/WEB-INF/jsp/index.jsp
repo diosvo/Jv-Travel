@@ -157,7 +157,7 @@
                         <div class="card">
                             <div class="tour-img">
                                 <div style="position: relative;">
-                                    <a href="/" style="
+                                    <a  href="<c:url value="/product" />?productId=${p.product_id}" style="
                                        display: block;
                                        overflow: hidden;
                                        ">
@@ -178,14 +178,14 @@
                                           background: rgba(0, 0, 0, 0.6);
                                           ">
                                         <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
-                                             class="me-2" />
+                                             class="me-2"/>
                                         ${p.destination}
                                     </span>
                                 </div>
                             </div>
 
                             <div class="card-body">
-                                <a class="text-decoration-none txt-black" href="<c:url value=" /product" />">
+                                <a class="text-decoration-none txt-black" href="<c:url value="/product" />?productId=${p.product_id}">
                                     <h5 class="card-title fw-bold txt-secondary" style="
                                         text-overflow: ellipsis;
                                         ">
@@ -208,12 +208,12 @@
                                         <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                                     </span>
 
-                                    <p class="my-2">Khởi hành: ${p.departureDate} lúc 09:00 tại TP. Hồ Chí Minh</p>
+                                    <p class="my-2">Khởi hành: ${p.departureDate} lúc 09:00 tại ${p.departure}</p>
                                 </div>
 
                                 <div class="d-flex justify-content-between align-items-baseline">
-                                    <h5 class="text-danger fw-bold">${p.price}</h5>
-                                    <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                    <h5 class="text-danger fw-bold">₫${p.price}</h5>
+                                    <a href="<c:url value="/product" />?productId=${p.product_id}" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                         tiết</a>
                                 </div>
                             </div>
