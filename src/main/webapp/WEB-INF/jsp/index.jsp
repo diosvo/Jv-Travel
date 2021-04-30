@@ -115,22 +115,8 @@
 
                 <div class="col">
                     <label class="form-label"> Thời gian khởi hành:</label>
-                    <div id="datepicker" class="input-group date bd-radius-quarter" data-date-format="dd-mm-yyyy"> 
-                        <input class="form-control" readonly="" type="text" style="
-                               border-top-right-radius   : inherit;
-                               border-bottom-right-radius: inherit;
-
-                               position: relative;
-                               ">
-                        <span class="input-group-addon">
-                            <img src="https://img.icons8.com/small/16/000000/overtime.png" style="
-                                 position: absolute;
-                                 top     : 30%;
-                                 right   : 0.5rem;
-
-                                 cursor: pointer;
-                                 "/>
-                        </span>
+                    <div class="input-group date bd-radius-quarter"> 
+                        <input type="date" class="form-control"/>
                     </div>
                 </div>
 
@@ -179,7 +165,7 @@
                                           ">
                                         <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
                                              class="me-2"/>
-                                        ${p.destination}
+                                        ${p.destination.destination_name}
                                     </span>
                                 </div>
                             </div>
@@ -208,7 +194,7 @@
                                         <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                                     </span>
 
-                                    <p class="my-2">Khởi hành: ${p.departureDate} lúc 09:00 tại ${p.departure}</p>
+                                    <p class="my-2">Khởi hành: ${p.departureDate} lúc 09:00 tại ${p.departure.departure_name}</p>
                                 </div>
 
                                 <div class="d-flex justify-content-between align-items-baseline">
@@ -632,5 +618,3 @@
         </div>
     </div>
 </div>
-
-<script src="<c:url value="js/datepicker.js"/>"></script>

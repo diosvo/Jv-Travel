@@ -31,7 +31,7 @@
                     <span class="mx-2">|</span>
                     <span class="bread-crumb">
                         Nơi đến:
-                        <a href="/" class="text-decoration-none txt-black ms-2">${product.destination}</a>
+                        <a href="/" class="text-decoration-none txt-black ms-2">${destination.destination_name}</a>
                     </span>
                     <span class="mx-2">|</span>
                     <span>
@@ -563,7 +563,7 @@
         <div class="col-md-7">
             <div class="bg-white p-2 bd-radius-half">
                 <div id="fb-root">
-                    <div class="fb-comments" data-href="http://localhost:8080/product" data-width="725"
+                    <div class="fb-comments" data-href="http://localhost:8080/product?productId=${product.product_id}" data-width="725"
                         data-numposts="5"></div>
                 </div>
             </div>
