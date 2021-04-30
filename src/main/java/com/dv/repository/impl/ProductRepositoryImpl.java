@@ -35,7 +35,7 @@ public class ProductRepositoryImpl implements ProductRepository {
         query.select(root);
 
         if (kw != null && !kw.isEmpty()) {
-            Predicate p = builder.like(root.get("name").as(String.class), String.format("%%%s%%", kw));
+            Predicate p = builder.like(root.get("tour_name").as(String.class), String.format("%%%s%%", kw));
 
             query = query.where(p);
         }
