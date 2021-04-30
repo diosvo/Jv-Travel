@@ -43,4 +43,10 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
         <put-attribute name="title" value="Giỏ hàng của bạn" />
         <put-attribute name="content" value="/WEB-INF/jsp/cart.jsp" />
     </definition>
+    
+    <!--Admin-->
+    <definition name="admin" extends="baseLayout">
+        <put-attribute name="title" value="Admin" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/index.jsp" />
+    </definition>
 </tiles-definitions>

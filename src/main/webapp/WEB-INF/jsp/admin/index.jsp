@@ -4,38 +4,47 @@
     Author     : Admin
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Admin</title>
+        <script src="<c:url value="/js/main.js" />"></script>
     </head>
     <body>
-        <div id="admin">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <div class="container">
+            <div class="py-2 fs-14">
+                <a href="/admin" class="text-decoration-none txt-black">Trang chủ</a>
+                <span class="mx-2">></span>
+                <a href="/" class="text-decoration-none txt-black">Admin</a>
+                <span class="mx-2">></span>
+                <a href="/" class="text-decoration-none txt-black">Quản lý</a>
+            </div>
+            <div class="bg-white bd-radius-half p-3 mb-4">
+                <table class="table">
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá bán</th>
+                        <th></th>
+                    </tr>
+                    <c:forEach items="${products}" var="p">
+                        <tr> 
+                            <td>${p.tourName}</td> 
+                            <td>${p.price} VNĐ</td> 
+                            <td style="text-align: center">
+                                <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-danger">
+                                        <a href="javascript:;" style="text-decoration: none; color: white" 
+                                           onclick="deleteProduct(${p.product_id})">Xóa</a>
+                                    </button>
+                                    <button type="button" class="btn btn-success">Sửa</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </div>
         </div>
     </body>
 </html>
