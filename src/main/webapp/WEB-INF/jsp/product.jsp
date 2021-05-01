@@ -26,12 +26,12 @@
                 <div class="my-3">
                     <span class="bread-crumb">
                         Nơi khởi hành:
-                        <a href="/" class="text-decoration-none txt-black ms-2">${departure.departure_name}</a>
+                        <a href="/" class="text-decoration-none txt-black ms-2">${product.departure.departure_name}</a>
                     </span>
                     <span class="mx-2">|</span>
                     <span class="bread-crumb">
                         Nơi đến:
-                        <a href="/" class="text-decoration-none txt-black ms-2">${destination.destination_name}</a>
+                        <a href="/" class="text-decoration-none txt-black ms-2">${product.destination.destination_name}</a>
                     </span>
                     <span class="mx-2">|</span>
                     <span>

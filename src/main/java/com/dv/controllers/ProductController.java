@@ -31,14 +31,6 @@ public class ProductController {
     @GetMapping("/product")
     public String productView(Model model, @RequestParam(name = "productId", required = false) int productId) {
         model.addAttribute("product", this.productService.getProductById(productId));
-
-        Product p = this.productService.getProductById(productId);
-        Destination des = p.getDestination();
-        Departure dep = p.getDeparture();
-
-        model.addAttribute("destination", this.destinationService.getDestinationId(des.getDestination_id()));
-        model.addAttribute("departure", this.departureService.getDepartureId(dep.getDeparture_id()));
-
         return "product";
     }
 }
