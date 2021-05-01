@@ -219,7 +219,7 @@
         </div>
     </div>
 
-    <!-- INTERESTED NAVIGATION -->
+    <!-- INTERESTED DESTINATION -->
     <div class="nagivation bg-blue txt-white">
         <div class="container">
             <div class="py-4">
@@ -230,162 +230,33 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
+                <c:forEach items="${destinations}" var="des">
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="border: none;">
+                            <a href="<c:url value="/destination" />?desId=${des.destination_id}" style="
+                               display: block;
+                               position: relative;
+                               overflow: hidden;
+                               ">
+                                <img src="${des.destination_image}" class="card-img-top" style="height: 275px"
+                                     alt="tour-img"
+                                     onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
+                                     onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
+                            </a>
+    
+                            <span class="txt-white fw-bold" style="
+                                  display: block;
+                                  position: absolute;
+                                  left: 0;
+                                  right: 0;
+                                  bottom: 0;
+    
+                                  padding: 0.25rem 0.5rem;
+                                  background: rgba(0, 0, 0, 0.6);
+                                  ">${des.destination_name}</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';
-                                         this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
+                </c:forEach>
 
                 <div class="d-flex justify-content-center align-items-center mb-4">
                     <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>

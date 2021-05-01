@@ -19,7 +19,7 @@ public class AdminController {
         return "admin";
     }
     
-    @GetMapping("/admin/addproduct")
+    @GetMapping("/admin/add-product")
     public String addProductView() {
         return "addproduct";
     }
