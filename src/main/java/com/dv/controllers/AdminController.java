@@ -18,4 +18,9 @@ public class AdminController {
     public String adminView() {
         return "admin";
     }
+    
+    @GetMapping("/admin/addproduct")
+    public String addProductView() {
+        return "addproduct";
+    }
 }
