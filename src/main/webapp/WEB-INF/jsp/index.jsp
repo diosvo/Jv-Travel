@@ -1,5 +1,6 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!-- Carousel -->
 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -144,9 +145,9 @@
                             <div class="tour-img">
                                 <div style="position: relative;">
                                     <a  href="<c:url value="/product" />?productId=${p.product_id}" style="
-                                       display: block;
-                                       overflow: hidden;
-                                       ">
+                                        display: block;
+                                        overflow: hidden;
+                                        ">
                                         <img src="${p.image}"
                                              class="card-img-top" alt="tour-img"
                                              style="height: 275px"
@@ -198,7 +199,12 @@
                                 </div>
 
                                 <div class="d-flex justify-content-between align-items-baseline">
-                                    <h5 class="text-danger fw-bold">₫${p.price}</h5>
+                                    <h5 class="text-danger fw-bold">
+                                        ₫
+                                        <fmt:formatNumber>
+                                            ${p.price}
+                                        </fmt:formatNumber>
+                                    </h5>
                                     <a href="<c:url value="/product" />?productId=${p.product_id}" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                         tiết</a>
                                 </div>

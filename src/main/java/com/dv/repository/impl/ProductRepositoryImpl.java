@@ -59,6 +59,7 @@ public class ProductRepositoryImpl implements ProductRepository {
         }
 
         return false;
+    }
 
     @Override
     @Transactional
