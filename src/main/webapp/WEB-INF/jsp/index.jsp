@@ -82,24 +82,6 @@
                 </div>
 
                 <div class="col-md-4">
-                    <label class="form-label">Nơi đến:</label>
-                    <div class="dropdown bg-white bd-radius-quarter">
-                        <a class="btn dropdown-toggle text-start w-100" href="/" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Tất cả
-                        </a>
-
-                        <ul class="dropdown-menu w-100">
-                            <li><a class="dropdown-item" href="/">Action</a></li>
-                            <li><a class="dropdown-item" href="/">Another action</a></li>
-                            <li><a class="dropdown-item" href="/">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
                     <label class="form-label">Nơi khởi hành:</label>
                     <div class="dropdown bg-white bd-radius-quarter">
                         <a class="btn dropdown-toggle text-start w-100" href="/" role="button" data-bs-toggle="dropdown"
@@ -108,8 +90,28 @@
                         </a>
 
                         <ul class="dropdown-menu w-100">
-                            <li><a class="dropdown-item" href="/">Thành phố Hồ Chí Minh</a></li>
-                            <li><a class="dropdown-item" href="/">Thành phố Hà Nội</a></li>
+                            <li><a class="dropdown-item" href="/">${p.departure.departure_name}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">Nơi đến:</label>
+                    <div class="dropdown bg-white bd-radius-quarter">
+                        <a class="btn dropdown-toggle text-start w-100" href="<c:url value="/destination" />" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Tất cả
+                        </a>
+
+
+                        <ul class="dropdown-menu w-100">
+                            <c:forEach items="${destionations}" var="des">
+                                <li>
+                                    <a class="dropdown-item" href="<c:url value="/destination" />?desId=${des.destination_id}">${des.destination_name}</a>
+                                </li>
+                            </c:forEach>
                         </ul>
                     </div>
                 </div>
