@@ -1,7 +1,16 @@
 package com.dv.controllers;
 
+import com.dv.pojo.Departure;
+import com.dv.pojo.Destination;
+import com.dv.pojo.Product;
+import com.dv.service.DepartureService;
+import com.dv.service.DestinationService;
+import com.dv.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  *
@@ -10,8 +19,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ProductController {
 
+    @Autowired
+    private ProductService productService;
+
+    @Autowired
+    private DestinationService destinationService;
+
+    @Autowired
+    private DepartureService departureService;
+
     @GetMapping("/product")
-    public String productView() {
+    public String productView(Model model, @RequestParam(name = "productId", required = false) int productId) {
+        model.addAttribute("product", this.productService.getProductById(productId));
         return "product";
     }
 }

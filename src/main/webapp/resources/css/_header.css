@@ -5,8 +5,7 @@
 .header-top a:hover,
 .header-center a:hover,
 .footer-url a:hover,
-.blogs a:hover,
-.card-body a:hover,
+.card-title:hover,
 .bread-crumb a:hover {
     cursor    : pointer;
     transition: var(--transition);
@@ -20,4 +19,4 @@ nav.header-center {
 
 nav.header-center a {
     color: var(--color-secondary);
-}
+}   

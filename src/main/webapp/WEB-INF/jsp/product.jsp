@@ -8,7 +8,7 @@
             <span class="mx-2">></span>
             <a href="/" class="text-decoration-none txt-black">Sản phẩm</a>
             <span class="mx-2">></span>
-            <a href="/" class="text-decoration-none txt-black">Tour Pháp - Lourdes - Italia</a>
+            <a href="/" class="text-decoration-none txt-black">${product.tourName}</a>
         </div>
     </div>
 
@@ -16,30 +16,30 @@
     <div class="row">
         <div class="col-md-12">
             <div class="bg-white bd-radius-half p-3">
-                <h5 class="txt-secondary mb-3"><strong>Tour Pháp - Lourdes - Italia</strong></h5>
+                <h5 class="txt-secondary mb-3"><strong><div>${product.tourName}</div></strong></h5>
 
                 <div class="badge text-wrap bg-light-gray txt-black p-3 bd-radius-half "
                     style="font-size:14px; font-weight:normal;">
-                    Mã SKU: DV-2609
+                    Mã SKU: DV-${product.SKU}
                 </div>
 
                 <div class="my-3">
                     <span class="bread-crumb">
                         Nơi khởi hành:
-                        <a href="/" class="text-decoration-none txt-black ms-2">Thành phố Hồ Chí Minh</a>
+                        <a href="/" class="text-decoration-none txt-black ms-2">${product.departure.departure_name}</a>
                     </span>
                     <span class="mx-2">|</span>
                     <span class="bread-crumb">
                         Nơi đến:
-                        <a href="/" class="text-decoration-none txt-black ms-2">Italia</a>
+                        <a href="/" class="text-decoration-none txt-black ms-2">${product.destination.destination_name}</a>
                     </span>
                     <span class="mx-2">|</span>
                     <span>
                         <img src="https://img.icons8.com/small/16/000000/overtime.png" class="me-1" />
-                        10 ngày 9 đêm
+                        ${product.durationNight + 1} ngày ${product.durationNight} đêm
                     </span>
                     <span class="mx-2">|</span>
-                    <span>Khởi hành: 15/05/2021 - 09:00 AM</span>
+                    <span>Khởi hành: ${product.departureDate}</span>
                     <span class="mx-2">|</span>
                     <span>
                         Phương tiện:
@@ -50,7 +50,7 @@
                     </span>
                 </div>
 
-                <h4 class="text-danger mb-3"><strong>64,990,000 VNĐ</strong></h4>
+                <h4 class="text-danger mb-3"><strong>₫${product.price}</strong></h4>
 
                 <div class="col-md-4">
                     <table class="table table-bordered fs-14">
@@ -563,7 +563,7 @@
         <div class="col-md-7">
             <div class="bg-white p-2 bd-radius-half">
                 <div id="fb-root">
-                    <div class="fb-comments" data-href="http://localhost:8080/product" data-width="725"
+                    <div class="fb-comments" data-href="http://localhost:8080/product?productId=${product.product_id}" data-width="725"
                         data-numposts="5"></div>
                 </div>
             </div>
