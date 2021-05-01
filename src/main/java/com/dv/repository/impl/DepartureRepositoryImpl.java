@@ -1,7 +1,7 @@
 package com.dv.repository.impl;
 
-import com.dv.pojo.Destination;
-import com.dv.repository.DestinationRepository;
+import com.dv.pojo.Departure;
+import com.dv.repository.DepartureRepository;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
@@ -13,15 +13,15 @@ import org.springframework.transaction.annotation.Transactional;
  * @author diosvo
  */
 @Repository
-public class DestinationRepositoryImpl implements DestinationRepository {
+public class DepartureRepositoryImpl implements DepartureRepository {
 
     @Autowired
     private LocalSessionFactoryBean sessionFactory;
 
     @Transactional
     @Override
-    public Destination getDestinationId(int id) {
+    public Departure geDepartureId(int id) {
         Session session = this.sessionFactory.getObject().getCurrentSession();
-        return session.get(Destination.class, id);
+        return session.get(Departure.class, id);
     }
 }
