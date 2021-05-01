@@ -19,13 +19,14 @@ import com.dv.service.ProductService;
  * @author Admin
  */
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/admin/api")
 public class ApiProductController {
     @Autowired
     private ProductService productService;
     
+    @DeleteMapping("/products/{productId}")
     @ResponseStatus(HttpStatus.OK)
-    public void deleteProduct(int productId) {
+    public void deleteProduct(@PathVariable(name = "productId") int productId) {
         this.productService.deleteProduct(productId);
     }
 }
