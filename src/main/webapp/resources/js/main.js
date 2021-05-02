@@ -44,3 +44,19 @@ function buyNow(productId) {
         }
     });
 }
+
+function pay() {
+    fetch("/api/pay", {
+        method: "POST",
+        headers: {
+            "Content-Type": "applcation/json"
+        }
+    }).then(function (res) {
+        if (res.status === 200) {
+            alert("Thanh toán thành công.");
+            location.reload();
+        } else {
+            alert("Something wrong!!!");
+        }
+    });
+}

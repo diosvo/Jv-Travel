@@ -106,7 +106,7 @@
                     <a href="javascript:;" 
                        onclick="addToCart(${product.product_id})" class="btn-details text-uppercase text-decoration-none fw-bold me-2">Thêm vào giỏ
                         hàng</a>
-                    <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Đặt tour ngay</a>
+                    <a href="javascript:;" onclick="buyNow(${product.product_id})" class="btn-details text-uppercase text-decoration-none fw-bold">Đặt tour ngay</a>
                 </div>
             </div>
         </div>

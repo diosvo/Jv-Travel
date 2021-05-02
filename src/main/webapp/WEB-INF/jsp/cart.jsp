@@ -64,22 +64,7 @@
                                     </h6>
                                 </td>
                                 <td style="width: 10%;">
-                                    <div class="input-group">
-                                        <span class="input-group-btn">
-                                            <button type="button" class="quantity-left-minus btn btn-outline-secondary"
-                                                    data-type="minus" data-field="">
-                                                <span>-</span>
-                                            </button>
-                                        </span>
-                                        <input type="text" id="quantity" name="quantity" class="form-control input-number"
-                                               value="${c.quantity}" min="1" max="10">
-                                        <span class="input-group-btn">
-                                            <button type="button" class="quantity-right-plus btn btn-outline-secondary"
-                                                    data-type="plus" data-field="">
-                                                <span>+</span>
-                                            </button>
-                                        </span>
-                                    </div>
+                                    <p class="text-center">${c.quantity}</p>
                                 </td>
                                 <td>
                                     <h6 class="text-danger text-center">
@@ -110,7 +95,7 @@
                             </h4>
                         </div>
                         <div>
-                            <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold" onclick="pay()">Thanh toán</a>
+                            <a class="btn-details text-uppercase text-decoration-none fw-bold" style="cursor:pointer" onclick="pay()">Thanh toán</a>
                         </div>
                     </div>
                 </div>
@@ -120,4 +105,3 @@
 </c:if>
 
 <script src="<c:url value="js/main.js"/>"></script>
-<script src="<c:url value="js/number-input.js"/>"></script>
