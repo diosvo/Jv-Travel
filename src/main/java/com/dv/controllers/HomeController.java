@@ -29,7 +29,7 @@ public class HomeController {
     @ModelAttribute
     public void addAttribute(Model model) {
         model.addAttribute("products", this.productService.getProducts(""));
-        model.addAttribute("destionations", this.destinationService.getDestinations());
+        model.addAttribute("destinations", this.destinationService.getDestinations());
     }
 
     @RequestMapping("/")

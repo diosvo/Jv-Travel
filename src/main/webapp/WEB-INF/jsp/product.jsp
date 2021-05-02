@@ -1,3 +1,4 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
@@ -19,8 +20,8 @@
                 <h5 class="txt-secondary mb-3"><strong><div>${product.tourName}</div></strong></h5>
 
                 <div class="badge text-wrap bg-light-gray txt-black p-3 bd-radius-half "
-                    style="font-size:14px; font-weight:normal;">
-                    Mã SKU: DV-${product.SKU}
+                     style="font-size:14px; font-weight:normal;">
+                    Mã SKU: DV-0${product.SKU}
                 </div>
 
                 <div class="my-3">
@@ -44,13 +45,18 @@
                     <span>
                         Phương tiện:
                         <img src="https://img.icons8.com/small/16/000000/airplane-front-view.png" title="Plane"
-                            class="ms-2" />
+                             class="ms-2" />
                         <img src="https://img.icons8.com/small/16/000000/train.png" title="Train" class="mx-2" />
                         <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                     </span>
                 </div>
 
-                <h4 class="text-danger mb-3"><strong>₫${product.price}</strong></h4>
+                <h4 class="text-danger mb-3"><strong>
+                        ₫
+                        <fmt:formatNumber>
+                            ${product.price}
+                        </fmt:formatNumber>
+                    </strong></h4>
 
                 <div class="col-md-4">
                     <table class="table table-bordered fs-14">
@@ -77,15 +83,15 @@
                         <div class="input-group my-2">
                             <span class="input-group-btn">
                                 <button type="button" class="quantity-left-minus btn btn-outline-secondary"
-                                    data-type="minus" data-field="">
+                                        data-type="minus" data-field="">
                                     <span>-</span>
                                 </button>
                             </span>
                             <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1"
-                                min="1" max="10">
+                                   min="1" max="10">
                             <span class="input-group-btn">
                                 <button type="button" class="quantity-right-plus btn btn-outline-secondary"
-                                    data-type="plus" data-field="">
+                                        data-type="plus" data-field="">
                                     <span>+</span>
                                 </button>
                             </span>
@@ -113,18 +119,18 @@
                     <div class="accordion-item">
                         <h2 class="text-uppercase accordion-header" id="headingOne">
                             <button class="accordion-button accordion-button txt-primary text-uppercase fw-bold"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
                                 Chi tiết tour
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#tourAccordion">
+                             data-bs-parent="#tourAccordion">
                             <div class="accordion-body fs-14">
                                 <div class="mb-3">
                                     <strong class="d-flex align-items-center txt-secondary text-uppercase mb-1">
                                         <img src="https://img.icons8.com/ultraviolet/10/000000/circled-dot.png"
-                                            class="me-2" />
+                                             class="me-2" />
                                         <span class="txt-primary">Ngày 1</span>
                                         <span class="txt-primary mx-2">|</span>
                                         <span>TP.HCM /HÀ NỘI - PARIS</span>
@@ -140,7 +146,7 @@
                                 <div class="mb-3">
                                     <strong class="d-flex align-items-center txt-secondary text-uppercase mb-1">
                                         <img src="https://img.icons8.com/ultraviolet/10/000000/circled-dot.png"
-                                            class="me-2" />
+                                             class="me-2" />
                                         <span class="txt-primary">Ngày 2</span>
                                         <span class="txt-primary mx-2">|</span>
                                         <span>PARIS CITY TOUR</span>
@@ -202,7 +208,7 @@
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#tourAccordion">
+                             data-bs-parent="#tourAccordion">
                             <div class="accordion-body fs-14">
                                 <div>
                                     <strong><u>Giá tour bao gồm</u></strong>
@@ -282,7 +288,7 @@
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#tourAccordion">
+                             data-bs-parent="#tourAccordion">
                             <div class="accordion-body fs-14">
                                 <div>
                                     <strong><u>Thanh toán</u></strong>
@@ -430,7 +436,7 @@
                             <div class="col-md-4">
                                 <a href="/">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                        alt="" class="w-100 bd-radius-quarter">
+                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs">
@@ -443,12 +449,12 @@
                                     </span>
                                     <span class="mx-2">
                                         <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
-                                            class="me-1" />
+                                             class="me-1" />
                                         MyNhung Vo
                                     </span>
                                     <span>
                                         <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
-                                            class="me-1" />
+                                             class="me-1" />
                                         0
                                     </span>
                                 </div>
@@ -463,7 +469,7 @@
                             <div class="col-md-4">
                                 <a href="/">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                        alt="" class="w-100 bd-radius-quarter">
+                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs">
@@ -476,12 +482,12 @@
                                     </span>
                                     <span class="mx-2">
                                         <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
-                                            class="me-1" />
+                                             class="me-1" />
                                         MyNhung Vo
                                     </span>
                                     <span>
                                         <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
-                                            class="me-1" />
+                                             class="me-1" />
                                         0
                                     </span>
                                 </div>
@@ -496,7 +502,7 @@
                             <div class="col-md-4">
                                 <a href="/">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                        alt="" class="w-100 bd-radius-quarter">
+                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs">
@@ -509,12 +515,12 @@
                                     </span>
                                     <span class="mx-2">
                                         <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
-                                            class="me-1" />
+                                             class="me-1" />
                                         MyNhung Vo
                                     </span>
                                     <span>
                                         <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
-                                            class="me-1" />
+                                             class="me-1" />
                                         0
                                     </span>
                                 </div>
@@ -529,7 +535,7 @@
                             <div class="col-md-4">
                                 <a href="/">
                                     <img src="https://images.unsplash.com/photo-1596627116762-bb01a46c233b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                                        alt="" class="w-100 bd-radius-quarter">
+                                         alt="" class="w-100 bd-radius-quarter">
                                 </a>
                             </div>
                             <div class="col-md-8 blogs">
@@ -542,12 +548,12 @@
                                     </span>
                                     <span class="mx-2">
                                         <img src="https://img.icons8.com/fluent-systems-filled/13/000000/user-tag.png"
-                                            class="me-1" />
+                                             class="me-1" />
                                         MyNhung Vo
                                     </span>
                                     <span>
                                         <img src="https://img.icons8.com/material-outlined/13/000000/comments.png"
-                                            class="me-1" />
+                                             class="me-1" />
                                         0
                                     </span>
                                 </div>
@@ -564,7 +570,7 @@
             <div class="bg-white p-2 bd-radius-half">
                 <div id="fb-root">
                     <div class="fb-comments" data-href="http://localhost:8080/product?productId=${product.product_id}" data-width="725"
-                        data-numposts="5"></div>
+                         data-numposts="5"></div>
                 </div>
             </div>
         </div>

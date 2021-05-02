@@ -24,7 +24,6 @@ public class Destination implements Serializable {
     private int destination_id;
     private String destination_name;
     private String destination_image;
-    private boolean abroad;
 
     @OneToMany(mappedBy = "destination", fetch = FetchType.EAGER)
     private List<Product> products;
@@ -74,20 +73,6 @@ public class Destination implements Serializable {
      */
     public void setDestination_image(String destination_image) {
         this.destination_image = destination_image;
-    }
-
-    /**
-     * @return the abroad
-     */
-    public boolean isAbroad() {
-        return abroad;
-    }
-
-    /**
-     * @param abroad the abroad to set
-     */
-    public void setAbroad(boolean abroad) {
-        this.abroad = abroad;
     }
 
     /**

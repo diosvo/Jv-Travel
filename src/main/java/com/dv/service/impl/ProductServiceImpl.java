@@ -21,6 +21,11 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> getProducts(String kw) {
         return this.productRepository.getProducts(kw);
     }
+    
+    @Override
+    public boolean deleteProduct(int ProductId) {
+        return this.productRepository.deleteProduct(ProductId);
+    }
 
     @Override
     public Product getProductById(int i) {

@@ -8,8 +8,9 @@ import java.util.List;
  * @author diosvo
  */
 public interface ProductService {
-
+    
     List<Product> getProducts(String kw);
+    boolean deleteProduct(int ProductId);
 
     Product getProductById(int proId);
 }

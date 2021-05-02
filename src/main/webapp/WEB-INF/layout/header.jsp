@@ -71,7 +71,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <c:forEach items="${destionations}" var="des">
+                                    <c:forEach items="${destinations}" var="des">
                                         <li>
                                             <a class="dropdown-item" href="<c:url value="/destination" />?desId=${des.destination_id}">${des.destination_name}</a>
                                         </li>
