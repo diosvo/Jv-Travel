@@ -22,8 +22,23 @@ function addToCart(productId) {
             let d = document.getElementById("cart-counter");
             let v = parseInt(d.innerText);
             d.innerText = v + 1;
-            
-            alert("Đã thêm sản phẩm vào giỏ hàng");
+
+            alert("Đã thêm sản phẩm vào giỏ hàng.");
+        } else {
+            alert("Something wrong!!!");
+        }
+    });
+}
+
+function buyNow(productId) {
+    fetch('/api/cart/' + productId).then(function (res) {
+        if (res.status === 200) {
+            let d = document.getElementById("cart-counter");
+            let v = parseInt(d.innerText);
+            d.innerText = v + 1;
+
+            alert("Đã thêm sản phẩm vào giỏ hàng.");
+            location.href = '/cart';
         } else {
             alert("Something wrong!!!");
         }

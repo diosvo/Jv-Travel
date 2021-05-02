@@ -110,7 +110,7 @@
                             </h4>
                         </div>
                         <div>
-                            <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Thanh toán</a>
+                            <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold" onclick="pay()">Thanh toán</a>
                         </div>
                     </div>
                 </div>
@@ -119,4 +119,5 @@
     </div>
 </c:if>
 
+<script src="<c:url value="js/main.js"/>"></script>
 <script src="<c:url value="js/number-input.js"/>"></script>
