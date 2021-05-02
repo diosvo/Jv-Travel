@@ -1,10 +1,5 @@
 package com.dv.controllers;
 
-import com.dv.pojo.Departure;
-import com.dv.pojo.Destination;
-import com.dv.pojo.Product;
-import com.dv.service.DepartureService;
-import com.dv.service.DestinationService;
 import com.dv.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,12 +16,6 @@ public class ProductController {
 
     @Autowired
     private ProductService productService;
-
-    @Autowired
-    private DestinationService destinationService;
-
-    @Autowired
-    private DepartureService departureService;
 
     @GetMapping("/product")
     public String productView(Model model, @RequestParam(name = "productId", required = false) int productId) {

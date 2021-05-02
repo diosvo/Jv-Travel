@@ -214,7 +214,6 @@
                         </div>
                     </div>
                 </c:forEach>
-
             </div>
         </div>
     </div>
@@ -259,7 +258,7 @@
                 </c:forEach>
 
                 <div class="d-flex justify-content-center align-items-center mb-4">
-                    <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
+                    <a  href="<c:url value="/destination" />" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
                 </div>
             </div>
         </div>
