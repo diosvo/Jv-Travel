@@ -60,4 +60,23 @@ public class ProductRepositoryImpl implements ProductRepository {
 
         return false;
     }
+    
+    @Override
+    @Transactional
+    public boolean addOrUpdateProduct(Product product) {
+        Session session = this.sessionFactory.getObject().getCurrentSession();
+        try {
+            if (product.getProduct_id() > 0) {
+                session.update(product);
+            } else {
+                session.save(product);
+            }
+
+            return true;
+        } catch (HibernateException ex) {
+            ex.printStackTrace();
+        }
+
+        return false;
+    }
 }

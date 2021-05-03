@@ -11,4 +11,5 @@ public interface ProductService {
     
     List<Product> getProducts(String kw);
     boolean deleteProduct(int ProductId);
+    boolean addOrUpdateProduct(Product product);
 }

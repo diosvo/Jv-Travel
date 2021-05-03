@@ -5,6 +5,7 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <div class="container">
     <div class="py-2 fs-14">
@@ -16,40 +17,52 @@
     </div>
     <div class="bg-white bd-radius-half p-3 mb-4">
         <div style="text-align: center; margin-bottom:30px; margin-top: 30px; "><h3>THÊM SẢN PHẨM</h3></div>
+        
+        <form:form method="post" action="/admin" modelAttribute="product">   
+            
         <div class="input-group mb-3" style="max-width: 800px; margin: auto;">
             <span class="input-group-text" style="min-width: 150px; text-align: center;" id="basic-addon1">Tour Name</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            <form:input type="text" class="form-control" path="tourName" />
         </div>
+        
         <div class="input-group mb-3" style="max-width: 800px; margin: auto;">
-            <span class="input-group-text"  style="min-width: 150px; text-align: center;"id="basic-addon1">Departure</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text"  style="min-width: 150px; text-align: center;" id="basic-addon1">Departure</span>
+            <form:input type="text" class="form-control" path="departure"/>
         </div>
+        
         <div class="input-group mb-3" style="max-width: 800px; margin: auto;">
             <span class="input-group-text" style="min-width: 150px; text-align: center;" id="basic-addon1">Destination</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            <form:input type="text" class="form-control" path="destination"/>
         </div>
+        
         <div class="input-group mb-3" style="max-width: 800px; margin: auto;">
             <span class="input-group-text" style="min-width: 150px; text-align: center;" id="basic-addon1">Price</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            <form:input type="text" class="form-control" path="price"/>
         </div>
+        
         <div class="input-group mb-3" style="max-width: 800px; margin: auto;">
             <span class="input-group-text" style="min-width: 150px; text-align: center;" id="basic-addon1">Duration Night</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            <form:input type="text" class="form-control" path="durationNight"/>
         </div>
+        
         <div class="input-group mb-3" style="max-width: 800px; margin: auto;">
             <span class="input-group-text" style="min-width: 150px; text-align: center;" id="basic-addon1">SKU</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            <form:input type="text" class="form-control" path="SKU"/>
         </div>
+        
         <div class="input-group mb-3" style="max-width: 800px; margin: auto;">
             <span class="input-group-text" style="min-width: 150px; text-align: center;" id="basic-addon1">Departure Date</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            <form:input type="text" class="form-control" path="departureDate"/>
         </div>
+        
         <div class="input-group mb-3" style="max-width: 800px; margin: auto;">
             <span class="input-group-text" style="min-width: 150px; text-align: center;" id="basic-addon1">Image</span>
-            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            <form:input type="text" class="form-control" path="image"/>
         </div>
+        
         <div style="text-align: center;">
-            <button type="button" class="btn btn-dark">Submit</button>
+            <input type="submit" class="btn btn-dark" value="Submit"/>
         </div>
+        </form:form>
     </div>
 </div>

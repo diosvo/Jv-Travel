@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <div class="container">
     <div class="py-2 fs-14">
@@ -53,6 +54,25 @@
                     </td>
                 </tr>
             </c:forEach>
+            <!--vi du-->
+            <tr id="product3"> 
+                    <td>3</td>
+                    <td>${product.tourName}</td> 
+                    <td>
+                        <fmt:formatNumber>
+                            ${product.price}
+                        </fmt:formatNumber> VNĐ
+                    </td> 
+                    <td style="text-align: center">
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-danger">
+                                <a href="javascript:;" style="text-decoration: none; color: white" 
+                                   onclick="deleteProduct(${p.product_id})">Xóa</a>
+                            </button>
+                            <button type="button" class="btn btn-success">Sửa</button>
+                        </div>
+                    </td>
+                </tr>
         </table>
     </div>
 </div>
