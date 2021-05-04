@@ -56,10 +56,6 @@
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
                             <a class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=12">Italia</a>
                         </li>
-                        <li>
-                            <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=13">Pháp</a>
-                        </li>
                     </ul>
                 </div>
 

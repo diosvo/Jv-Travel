@@ -36,9 +36,9 @@
                             Đăng ký
                         </a>
                         <span class="mx-2">|</span>
-                        <a href="/cart" class="text-decoration-none txt-white">
+                        <a href="<c:url value="/cart" />" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/paid--v1.png" class="me-2" />
-                            Tour đã đặt (1)
+                            <span id="cart-counter">Tour đã đặt (${cartStats.totalQuantity})</span>
                         </a>
                     </div>
                 </div>

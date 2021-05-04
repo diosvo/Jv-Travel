@@ -3,7 +3,6 @@ $(document).ready(function () {
         e.preventDefault();
         var quantity = parseInt($('#quantity').val());
         $('#quantity').val(quantity + 1);
-
     });
 
     $('.quantity-left-minus').click(function (e) {

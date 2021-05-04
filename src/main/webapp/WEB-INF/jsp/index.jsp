@@ -146,7 +146,7 @@
                         <div class="card">
                             <div class="tour-img">
                                 <div style="position: relative;">
-                                    <a  href="<c:url value="/product" />?productId=${p.product_id}" style="
+                                    <a href="<c:url value="/product" />?productId=${p.product_id}" style="
                                         display: block;
                                         overflow: hidden;
                                         ">
