@@ -21,10 +21,15 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
                        value="/WEB-INF/jsp/index.jsp" />
     </definition>
 
-<!--Product-->
+    <!--Product-->
     <definition name="product" extends="baseLayout">
         <put-attribute name="title" value="Chi tiết tour du lịch" />
         <put-attribute name="content" value="/WEB-INF/jsp/product.jsp" />
+    </definition>
+    
+    <definition name="destination" extends="baseLayout">
+        <put-attribute name="title" value="Điểm đến hấp dẫn" />
+        <put-attribute name="content" value="/WEB-INF/jsp/destination.jsp" />
     </definition>
     
     <!--Auth-->
@@ -49,10 +54,9 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
         <put-attribute name="title" value="Admin" />
         <put-attribute name="content" value="/WEB-INF/jsp/admin/index.jsp" />
     </definition>
-    
-    <definition name="add-product" extends="baseLayout">
-        <put-attribute name="title" value="Admin" />
-        <put-attribute name="content" value="/WEB-INF/jsp/admin/add-product.jsp" />
+        
+    <definition name="addProduct" extends="baseLayout">
+        <put-attribute name="title" value="Thêm sản phẩm mới" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/addProduct.jsp" />
     </definition>
-    
 </tiles-definitions>

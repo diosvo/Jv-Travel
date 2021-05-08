@@ -1,6 +1,7 @@
 <%-- 
     Author     : diosvo
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
 <footer>
@@ -33,27 +34,27 @@
                     <ul class="footer-url list-unstyled">
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Campuchia</a>
+                            <a href="/" class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=7">Campuchia</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Singapore</a>
+                            <a href="/" class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=8">Singapore</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Thái Lan</a>
+                            <a href="/" class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=9">Thái Lan</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Nhật Bản</a>
+                            <a href="/" class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=10">Nhật Bản</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Hàn quốc</a>
+                            <a href="/" class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=11">Hàn quốc</a>
                         </li>
                         <li>
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Italia</a>
+                            <a class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=12">Italia</a>
                         </li>
                     </ul>
                 </div>
@@ -63,27 +64,27 @@
                     <ul class="footer-url list-unstyled">
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Hà Nội</a>
+                            <a class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=1">Hà Nội</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Hạ Long</a>
+                            <a class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=2">Hạ Long</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Ninh Bình</a>
+                            <a class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=3">Ninh Bình</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Quảng Ninh</a>
+                            <a class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=4">Quảng Ninh</a>
                         </li>
                         <li class="mb-2">
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Lào Cai</a>
+                            <a class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=5">Lào Cai</a>
                         </li>
                         <li>
                             <img src="https://img.icons8.com/ios-filled/8/21B7CB/sort-right.png" />
-                            <a href="/" class="text-decoration-none text-dark ms-1">Đà Nẵng</a>
+                            <a class="text-decoration-none text-dark ms-1" href="<c:url value="/destination" />?desId=6">Đà Nẵng</a>
                         </li>
                     </ul>
                 </div>

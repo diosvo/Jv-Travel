@@ -45,7 +45,7 @@ public class ProductRepositoryImpl implements ProductRepository {
 
         return q.getResultList();
     }
-    
+
     @Override
     @Transactional
     public boolean deleteProduct(int productId) {
@@ -60,7 +60,7 @@ public class ProductRepositoryImpl implements ProductRepository {
 
         return false;
     }
-    
+
     @Override
     @Transactional
     public boolean addOrUpdateProduct(Product product) {
@@ -78,5 +78,12 @@ public class ProductRepositoryImpl implements ProductRepository {
         }
 
         return false;
+    }
+
+    @Override
+    @Transactional
+    public Product getProductById(int i) {
+        Session session = this.sessionFactory.getObject().getCurrentSession();
+        return session.get(Product.class, i);
     }
 }

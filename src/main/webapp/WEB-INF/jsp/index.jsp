@@ -1,5 +1,6 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!-- Carousel -->
 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -81,24 +82,6 @@
                 </div>
 
                 <div class="col-md-4">
-                    <label class="form-label">Nơi đến:</label>
-                    <div class="dropdown bg-white bd-radius-quarter">
-                        <a class="btn dropdown-toggle text-start w-100" href="/" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Tất cả
-                        </a>
-
-                        <ul class="dropdown-menu w-100">
-                            <li><a class="dropdown-item" href="/">Action</a></li>
-                            <li><a class="dropdown-item" href="/">Another action</a></li>
-                            <li><a class="dropdown-item" href="/">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
                     <label class="form-label">Nơi khởi hành:</label>
                     <div class="dropdown bg-white bd-radius-quarter">
                         <a class="btn dropdown-toggle text-start w-100" href="/" role="button" data-bs-toggle="dropdown"
@@ -107,30 +90,36 @@
                         </a>
 
                         <ul class="dropdown-menu w-100">
-                            <li><a class="dropdown-item" href="/">Thành phố Hồ Chí Minh</a></li>
-                            <li><a class="dropdown-item" href="/">Thành phố Hà Nội</a></li>
+                            <li><a class="dropdown-item" href="/">${p.departure.departure_name}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">Nơi đến:</label>
+                    <div class="dropdown bg-white bd-radius-quarter">
+                        <a class="btn dropdown-toggle text-start w-100" href="<c:url value="/destination" />" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Tất cả
+                        </a>
+
+
+                        <ul class="dropdown-menu w-100">
+                            <c:forEach items="${destionations}" var="des">
+                                <li>
+                                    <a class="dropdown-item" href="<c:url value="/destination" />?desId=${des.destination_id}">${des.destination_name}</a>
+                                </li>
+                            </c:forEach>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col">
                     <label class="form-label"> Thời gian khởi hành:</label>
-                    <div id="datepicker" class="input-group date bd-radius-quarter" data-date-format="dd-mm-yyyy"> 
-                        <input class="form-control" readonly="" type="text" style="
-                               border-top-right-radius   : inherit;
-                               border-bottom-right-radius: inherit;
-
-                               position: relative;
-                               ">
-                        <span class="input-group-addon">
-                            <img src="https://img.icons8.com/small/16/000000/overtime.png" style="
-                                 position: absolute;
-                                 top     : 30%;
-                                 right   : 0.5rem;
-
-                                 cursor: pointer;
-                                 "/>
-                        </span>
+                    <div class="input-group date bd-radius-quarter"> 
+                        <input type="date" class="form-control"/>
                     </div>
                 </div>
 
@@ -157,10 +146,10 @@
                         <div class="card">
                             <div class="tour-img">
                                 <div style="position: relative;">
-                                    <a href="/" style="
-                                       display: block;
-                                       overflow: hidden;
-                                       ">
+                                    <a href="<c:url value="/product" />?productId=${p.product_id}" style="
+                                        display: block;
+                                        overflow: hidden;
+                                        ">
                                         <img src="${p.image}"
                                              class="card-img-top" alt="tour-img"
                                              style="height: 275px"
@@ -178,14 +167,14 @@
                                           background: rgba(0, 0, 0, 0.6);
                                           ">
                                         <img src="https://img.icons8.com/fluent-systems-regular/16/FFFFFF/worldwide-location.png"
-                                             class="me-2" />
-                                        ${p.destination}
+                                             class="me-2"/>
+                                        ${p.destination.destination_name}
                                     </span>
                                 </div>
                             </div>
 
                             <div class="card-body">
-                                <a class="text-decoration-none txt-black" href="<c:url value=" /product" />">
+                                <a class="text-decoration-none txt-black" href="<c:url value="/product" />?productId=${p.product_id}">
                                     <h5 class="card-title fw-bold txt-secondary" style="
                                         text-overflow: ellipsis;
                                         ">
@@ -208,24 +197,28 @@
                                         <img src="https://img.icons8.com/small/16/000000/car.png" title="Car" />
                                     </span>
 
-                                    <p class="my-2">Khởi hành: ${p.departureDate} lúc 09:00 tại TP. Hồ Chí Minh</p>
+                                    <p class="my-2">Khởi hành: ${p.departureDate} lúc 09:00 tại ${p.departure.departure_name}</p>
                                 </div>
 
                                 <div class="d-flex justify-content-between align-items-baseline">
-                                    <h5 class="text-danger fw-bold">${p.price}</h5>
-                                    <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
+                                    <h5 class="text-danger fw-bold">
+                                        ₫
+                                        <fmt:formatNumber>
+                                            ${p.price}
+                                        </fmt:formatNumber>
+                                    </h5>
+                                    <a href="<c:url value="/product" />?productId=${p.product_id}" class="btn-details text-uppercase text-decoration-none fw-bold">Chi
                                         tiết</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </c:forEach>
-
             </div>
         </div>
     </div>
 
-    <!-- INTERESTED NAVIGATION -->
+    <!-- INTERESTED DESTINATION -->
     <div class="nagivation bg-blue txt-white">
         <div class="container">
             <div class="py-4">
@@ -236,165 +229,36 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
+                <c:forEach items="${destinations}" var="des">
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="border: none;">
+                            <a href="<c:url value="/destination" />?desId=${des.destination_id}" style="
+                               display: block;
+                               position: relative;
+                               overflow: hidden;
+                               ">
+                                <img src="${des.destination_image}" class="card-img-top" style="height: 275px"
+                                     alt="tour-img"
+                                     onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
+                                     onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
+                            </a>
+    
+                            <span class="txt-white fw-bold" style="
+                                  display: block;
+                                  position: absolute;
+                                  left: 0;
+                                  right: 0;
+                                  bottom: 0;
+    
+                                  padding: 0.25rem 0.5rem;
+                                  background: rgba(0, 0, 0, 0.6);
+                                  ">${des.destination_name}</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="border: none;">
-                        <a href="/" style="
-                           display: block;
-                           position: relative;
-                           overflow: hidden;
-                           ">
-                            <img src="http://vyctravel.com/libs/upload/ckfinder/images/Y%201.jpg" class="card-img-top"
-                                 alt="tour-img"
-                                 onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
-                                 onmouseout="this.style.transform = 'scale(1)';
-                                         this.style.transition = 'all 0.3s ease'">
-                        </a>
-
-                        <span class="txt-white fw-bold" style="
-                              display: block;
-                              position: absolute;
-                              left: 0;
-                              right: 0;
-                              bottom: 0;
-
-                              padding: 0.25rem 0.5rem;
-                              background: rgba(0, 0, 0, 0.6);
-                              ">Rome, Italia</span>
-                    </div>
-                </div>
+                </c:forEach>
 
                 <div class="d-flex justify-content-center align-items-center mb-4">
-                    <a href="/" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
+                    <a  href="<c:url value="/destination" />" class="btn-details text-uppercase text-decoration-none fw-bold">Xem tất cả tour</a>
                 </div>
             </div>
         </div>
@@ -632,5 +496,3 @@
         </div>
     </div>
 </div>
-
-<script src="<c:url value="js/datepicker.js"/>"></script>

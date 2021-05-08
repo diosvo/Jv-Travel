@@ -1,4 +1,5 @@
 <%-- Author : diosvo --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
 <div class="header-container">
@@ -26,7 +27,7 @@
                         <span class="mx-2">|</span>
                         <a href="/account/login" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/login-rounded-right--v1.png"
-                                class="me-2" />
+                                 class="me-2" />
                             Đăng nhập
                         </a>
                         <span class="mx-2">|</span>
@@ -35,9 +36,9 @@
                             Đăng ký
                         </a>
                         <span class="mx-2">|</span>
-                        <a href="/cart" class="text-decoration-none txt-white">
+                        <a href="<c:url value="/cart" />" class="text-decoration-none txt-white">
                             <img src="https://img.icons8.com/small/16/ffffff/paid--v1.png" class="me-2" />
-                            Tour đã đặt (1)
+                            <span id="cart-counter">Tour đã đặt (${cartStats.totalQuantity})</span>
                         </a>
                     </div>
                 </div>
@@ -64,18 +65,22 @@
                                 <a href="/" class="text-decoration-none">Trang chủ</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/" id="navbarDarkDropdownMenuLink"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="<c:url value="/destination" />" id="navbarDarkDropdownMenuLink"
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Tất cả các tour
                                 </a>
+
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Tour Trong Nước</a></li>
-                                    <li><a class="dropdown-item" href="#">Tour Quốc Tế</a></li>
+                                    <c:forEach items="${destinations}" var="des">
+                                        <li>
+                                            <a class="dropdown-item" href="<c:url value="/destination" />?desId=${des.destination_id}">${des.destination_name}</a>
+                                        </li>
+                                    </c:forEach>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/" id="navbarDarkDropdownMenuLink"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Cẩm nang du lịch
                                 </a>
                                 <ul class="dropdown-menu">
