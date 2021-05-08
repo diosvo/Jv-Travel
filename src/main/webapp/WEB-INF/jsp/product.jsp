@@ -7,7 +7,7 @@
         <div class="col-md-12">
             <a href="/" class="text-decoration-none txt-black">Trang chủ</a>
             <span class="mx-2">></span>
-            <a href="/" class="text-decoration-none txt-black">Sản phẩm</a>
+            <a href="/destination" class="text-decoration-none txt-black">Sản phẩm</a>
             <span class="mx-2">></span>
             <a href="/" class="text-decoration-none txt-black">${product.tourName}</a>
         </div>

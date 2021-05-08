@@ -45,7 +45,7 @@ public class ProductRepositoryImpl implements ProductRepository {
 
         return q.getResultList();
     }
-    
+
     @Override
     @Transactional
     public boolean deleteProduct(int productId) {
@@ -63,8 +63,35 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     @Transactional
+    public boolean addOrUpdateProduct(Product product) {
+        Session session = this.sessionFactory.getObject().getCurrentSession();
+        try {
+            if (product.getProduct_id() > 0) {
+                session.update(product);
+            } else {
+                session.save(product);
+            }
+
+            return true;
+        } catch (HibernateException ex) {
+            ex.printStackTrace();
+        }
+
+        return false;
+    }
+
+    @Override
+    @Transactional
     public Product getProductById(int i) {
         Session session = this.sessionFactory.getObject().getCurrentSession();
         return session.get(Product.class, i);
+    }
+
+    @Override
+    @Transactional
+    public List<Product> onSearch(String query) {
+        Session session = this.sessionFactory.getObject().getCurrentSession();
+        Query q = session.createQuery("SELECT p FROM Product p WHERE p.tourName LIKE :q").setParameter("q", "" + query + "%");
+        return q.getResultList();
     }
 }

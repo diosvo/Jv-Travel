@@ -22,4 +22,11 @@ public class ProductController {
         model.addAttribute("product", this.productService.getProductById(productId));
         return "product";
     }
+
+    @GetMapping("/search")
+    public String searchView(Model model, @RequestParam(name = "q", required = false) String query) {
+        model.addAttribute("products", this.productService.onSearch(query));
+        model.addAttribute("query", query);
+        return "search";
+    }
 }

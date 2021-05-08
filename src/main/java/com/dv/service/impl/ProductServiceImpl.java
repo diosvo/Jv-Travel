@@ -21,14 +21,24 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> getProducts(String kw) {
         return this.productRepository.getProducts(kw);
     }
-    
+
     @Override
     public boolean deleteProduct(int ProductId) {
         return this.productRepository.deleteProduct(ProductId);
     }
 
     @Override
+    public boolean addOrUpdateProduct(Product prdct) {
+        return this.productRepository.addOrUpdateProduct(prdct);
+    }
+
+    @Override
     public Product getProductById(int i) {
         return this.productRepository.getProductById(i);
+    }
+
+    @Override
+    public List<Product> onSearch(String query) {
+        return this.productRepository.onSearch(query);
     }
 }
