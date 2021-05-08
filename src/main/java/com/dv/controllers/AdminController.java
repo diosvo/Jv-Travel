@@ -32,10 +32,10 @@ public class AdminController {
         return "admin";
     }
     
-    @RequestMapping(value = {"/admin/addproduct"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/admin/add-product"}, method = RequestMethod.POST)
     public String addProduct(Model model) {
         model.addAttribute("product", new Product());
-        return "addproduct";
+        return "add-product";
     }
     
      @Autowired

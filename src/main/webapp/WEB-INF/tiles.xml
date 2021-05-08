@@ -50,9 +50,9 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
         <put-attribute name="content" value="/WEB-INF/jsp/admin/index.jsp" />
     </definition>
     
-    <definition name="addproduct" extends="baseLayout">
+    <definition name="add-product" extends="baseLayout">
         <put-attribute name="title" value="Admin" />
-        <put-attribute name="content" value="/WEB-INF/jsp/admin/addproduct.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/add-product.jsp" />
     </definition>
     
 </tiles-definitions>
