@@ -37,9 +37,4 @@ public class DestinationController {
         }
         return "destination";
     }
-
-    @GetMapping("/search")
-    public String searchView() {
-        return "search";
-    }
 }

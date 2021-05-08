@@ -1,4 +1,4 @@
-    package com.dv.controllers;
+package com.dv.controllers;
 
 import com.dv.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,5 +21,12 @@ public class ProductController {
     public String productView(Model model, @RequestParam(name = "productId", required = false) int productId) {
         model.addAttribute("product", this.productService.getProductById(productId));
         return "product";
+    }
+
+    @GetMapping("/search")
+    public String searchView(Model model, @RequestParam(name = "q", required = false) String query) {
+        model.addAttribute("products", this.productService.onSearch(query));
+        model.addAttribute("query", query);
+        return "search";
     }
 }

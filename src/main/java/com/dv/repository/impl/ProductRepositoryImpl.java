@@ -86,4 +86,12 @@ public class ProductRepositoryImpl implements ProductRepository {
         Session session = this.sessionFactory.getObject().getCurrentSession();
         return session.get(Product.class, i);
     }
+
+    @Override
+    @Transactional
+    public List<Product> onSearch(String query) {
+        Session session = this.sessionFactory.getObject().getCurrentSession();
+        Query q = session.createQuery("SELECT p FROM Product p WHERE p.tourName LIKE :q").setParameter("q", "" + query + "%");
+        return q.getResultList();
+    }
 }

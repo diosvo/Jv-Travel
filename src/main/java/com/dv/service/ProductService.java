@@ -16,5 +16,6 @@ public interface ProductService {
     boolean addOrUpdateProduct(Product product);
 
     Product getProductById(int proId);
-
+    
+    List<Product> onSearch(String query);
 }

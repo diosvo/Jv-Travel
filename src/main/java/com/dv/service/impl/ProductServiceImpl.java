@@ -36,4 +36,9 @@ public class ProductServiceImpl implements ProductService {
     public Product getProductById(int i) {
         return this.productRepository.getProductById(i);
     }
+
+    @Override
+    public List<Product> onSearch(String query) {
+        return this.productRepository.onSearch(query);
+    }
 }
