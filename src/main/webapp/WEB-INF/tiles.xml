@@ -32,6 +32,11 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
         <put-attribute name="content" value="/WEB-INF/jsp/destination.jsp" />
     </definition>
     
+    <definition name="search" extends="baseLayout">
+        <put-attribute name="title" value="Tìm kiếm" />
+        <put-attribute name="content" value="/WEB-INF/jsp/search.jsp" />
+    </definition>
+    
     <!--Auth-->
     <definition name="login" extends="baseLayout">
         <put-attribute name="title" value="Đăng nhập" />

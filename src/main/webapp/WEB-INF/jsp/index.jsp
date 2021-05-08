@@ -68,7 +68,7 @@
 <div id="index" class="home mt-4">
     <div class="container">
         <!-- SEARCH FORM -->
-        <form class="search-from p-4 bg-blue bd-radius-quarter txt-white">
+        <form class="search-from p-4 bg-blue bd-radius-quarter txt-white" method="get" action="search">
 
             <h4 class="text-uppercase fw-bold">
                 <img src="https://img.icons8.com/ios-filled/24/FFFFFF/search--v1.png" class="me-2" />
@@ -78,7 +78,7 @@
             <div class="row my-3">
                 <div class="col-md-8">
                     <label class="form-label">Tên tour:</label>
-                    <input type="text" class="form-control" placeholder="Nhập tên tour mà bạn đang tìm kiếm...">
+                    <input type="text" name="q" class="form-control" placeholder="Nhập tên tour mà bạn đang tìm kiếm...">
                 </div>
 
                 <div class="col-md-4">
@@ -147,9 +147,9 @@
                             <div class="tour-img">
                                 <div style="position: relative;">
                                     <a href="<c:url value="/product" />?productId=${p.product_id}" style="
-                                        display: block;
-                                        overflow: hidden;
-                                        ">
+                                       display: block;
+                                       overflow: hidden;
+                                       ">
                                         <img src="${p.image}"
                                              class="card-img-top" alt="tour-img"
                                              style="height: 275px"
@@ -242,14 +242,14 @@
                                      onmouseover="this.style.transform = 'scale(1.05)';this.style.transition = 'all 0.3s ease'"
                                      onmouseout="this.style.transform = 'scale(1)';this.style.transition = 'all 0.3s ease'">
                             </a>
-    
+
                             <span class="txt-white fw-bold" style="
                                   display: block;
                                   position: absolute;
                                   left: 0;
                                   right: 0;
                                   bottom: 0;
-    
+
                                   padding: 0.25rem 0.5rem;
                                   background: rgba(0, 0, 0, 0.6);
                                   ">${des.destination_name}</span>
