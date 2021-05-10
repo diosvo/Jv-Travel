@@ -64,6 +64,16 @@ public class AdminController {
         return "addProduct";
     }
     
+    @RequestMapping("/admin/update-product")
+    public String updateView(Model model, 
+            @RequestParam(name = "productId", 
+                    required=false, 
+                    defaultValue = "0") int productId) {
+
+        model.addAttribute("product", this.productService.getProductById(productId));
+        
+        return "updateProduct";
+    }
     
     @PostMapping("/admin/view-product")
     public String addProduct(Model model, 
@@ -88,6 +98,47 @@ public class AdminController {
             preparedStmt.setInt(7, p.getSKU());
             preparedStmt.setString(8, "2021-04-25 10:38:26");
             preparedStmt.setString(9, p.getImage());
+
+            // execute the preparedstatement
+            preparedStmt.execute();
+
+            conn.close();
+            return "product";
+        }
+        
+        if (!this.productService.addOrUpdateProduct(p)) {
+            model.addAttribute("erroMsg", "Something Wrong!!!");
+            return "product";
+        }
+        
+        return "redirect:/";
+    }
+    
+    @Autowired
+    private LocalSessionFactoryBean sessionFactory;
+    
+    @PostMapping("/admin/update/")
+    public String updateProduct(Model model, 
+            @ModelAttribute(value = "product") @Valid Product p, 
+            BindingResult result) throws ClassNotFoundException, SQLException {
+        if (result.hasErrors()) {
+            String myDriver = "com.mysql.jdbc.Driver";
+            String myUrl = "jdbc:mysql://localhost/dv-travel";
+            Class.forName(myDriver);
+            Connection conn = DriverManager.getConnection(myUrl, "root", "");
+
+            // the mysql insert statement
+            String query = "update product set tour_name=?,departure=?,destination=?,price=?,duration_night=?,SKU =?,departure_date =?,image =? where product_id=?";
+            PreparedStatement preparedStmt = conn.prepareStatement(query);
+            preparedStmt.setString(1, p.getTourName());
+            preparedStmt.setInt(2, 1);
+            preparedStmt.setInt(3, 12);
+            preparedStmt.setBigDecimal(4, p.getPrice());
+            preparedStmt.setInt(5, p.getDurationNight());
+            preparedStmt.setInt(6, p.getSKU());
+            preparedStmt.setString(7, "2021-04-25 10:38:26");
+            preparedStmt.setString(8, p.getImage());
+            preparedStmt.setInt(9, p.getProduct_id());
 
             // execute the preparedstatement
             preparedStmt.execute();

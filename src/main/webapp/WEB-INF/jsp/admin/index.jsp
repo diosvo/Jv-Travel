@@ -47,7 +47,10 @@
                                 <a href="javascript:;" style="text-decoration: none; color: white" 
                                    onclick="deleteProduct(${p.product_id})">Xóa</a>
                             </button>
-                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-success">
+                                <a style="text-decoration: none; color: white"
+                                   href="<c:url value="/admin/update-product" />/?productId=${p.product_id}">Cập nhật</a>
+                            </button>
                         </div>
                     </td>
                 </tr>
