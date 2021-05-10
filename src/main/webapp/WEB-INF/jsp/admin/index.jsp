@@ -14,9 +14,16 @@
 
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <button style="color:white" type="button" class="btn btn-warning">
-                <a href="/admin/product" style="text-decoration: none; color: white">Thêm</a>
-            </button>
+
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-warning type="button">
+                    <a href="/admin/product" style="text-decoration: none; color: white">Thêm</a>
+                </button>
+                <button class="btn btn-info" type="button">
+                    <a href="/admin/stast" style="text-decoration: none; color: white">Thống kê</a>
+                </button>
+            </div>
+            
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-secondary" type="submit">Search</button>
