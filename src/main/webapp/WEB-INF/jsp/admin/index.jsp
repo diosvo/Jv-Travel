@@ -15,7 +15,7 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <button style="color:white" type="button" class="btn btn-warning">
-                <a href="/admin/add-product" style="text-decoration: none; color: white">Thêm</a>
+                <a href="/admin/product" style="text-decoration: none; color: white">Thêm</a>
             </button>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
