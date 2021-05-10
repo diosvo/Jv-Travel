@@ -59,4 +59,12 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
         <put-attribute name="title" value="Thêm sản phẩm mới" />
         <put-attribute name="content" value="/WEB-INF/jsp/admin/addProduct.jsp" />
     </definition>
+    <definition name="updateProduct" extends="baseLayout">
+        <put-attribute name="title" value="Cập nhật sản phẩm" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/updateProduct.jsp" />
+    </definition>
+    <definition name="stast" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/stast.jsp" />
+    </definition>
 </tiles-definitions>
