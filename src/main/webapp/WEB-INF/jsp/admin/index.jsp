@@ -15,7 +15,7 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <button style="color:white" type="button" class="btn btn-warning">
-                <a href="/admin/add-product" style="text-decoration: none; color: white">Thêm</a>
+                <a href="/admin/product" style="text-decoration: none; color: white">Thêm</a>
             </button>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -47,7 +47,10 @@
                                 <a href="javascript:;" style="text-decoration: none; color: white" 
                                    onclick="deleteProduct(${p.product_id})">Xóa</a>
                             </button>
-                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-success">
+                                <a style="text-decoration: none; color: white"
+                                   href="<c:url value="/admin/update-product" />/?productId=${p.product_id}">Cập nhật</a>
+                            </button>
                         </div>
                     </td>
                 </tr>

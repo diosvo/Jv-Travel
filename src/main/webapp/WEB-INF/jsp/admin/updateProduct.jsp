@@ -4,19 +4,20 @@
            uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<c:url value="/admin/add-product" var="action" />
 <div class="container">
     <div class="py-2 fs-14">
         <a href="/admin" class="text-decoration-none txt-black">Trang chủ</a>
         <span class="mx-2">></span>
         <a href="/admin" class="text-decoration-none txt-black">Admin</a>
         <span class="mx-2">></span>
-        <a href="/" class="text-decoration-none txt-black">Thêm sản phẩm</a>
+        <a href="/" class="text-decoration-none txt-black">Cập nhật sản phẩm</a>
     </div>
 
     <div class="bg-white bd-radius-half p-3 mb-4">
-        <div style="text-align: center; margin-bottom:30px; margin-top: 30px; "><h3>THÊM SẢN PHẨM</h3></div>
-        <form:form method="post" action="/admin/view-product" modelAttribute="product">   
+        <div style="text-align: center; margin-bottom:30px; margin-top: 30px; "><h3>CẬP NHẬT SẢN PHẨM</h3></div>
+        
+        <form:form method="post" action="/admin/update/" modelAttribute="product">
+            <form:input type="hidden" class="form-control" value="${p.product_id}" path="product_id"/>
 
             <div class="input-group mb-3" style="max-width: 800px; margin: auto;">
                 <span class="input-group-text" style="min-width: 150px; text-align: center;" id="basic-addon1">Tour Name</span>
