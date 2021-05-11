@@ -12,10 +12,10 @@
         <a href="/" class="text-decoration-none txt-black">Quản lý</a>
     </div>
 
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <button style="color:white" type="button" class="btn btn-warning">
-                <a href="/admin/product" style="text-decoration: none; color: white">Thêm</a>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid p-0">
+            <button type="button" class="btn btn-warning">
+                <a href="/admin/product"  class="text-decoration-none txt-white">Thêm</a>
             </button>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -27,28 +27,28 @@
     <div class="bg-white bd-radius-half p-3 mb-4">
         <table class="table">
             <tr>
-                <th>Mã sản phẩm</th>
+                <th class="text-center">Mã SP</th>
                 <th>Tên sản phẩm</th>
                 <th>Giá bán</th>
                 <th class="text-center">Thao tác</th>
             </tr>
             <c:forEach items="${products}" var="p">
                 <tr id="product${p.product_id}"> 
-                    <td>${p.product_id}</td>
+                    <td class="text-center">${p.product_id}</td>
                     <td>${p.tourName}</td> 
-                    <td>
+                    <td class="text-left">
                         <fmt:formatNumber>
                             ${p.price}
-                        </fmt:formatNumber> VNĐ
+                        </fmt:formatNumber>
                     </td> 
-                    <td style="text-align: center">
-                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+                    <td class="text-center">
+                        <div class="btn-group btn-group-sm" role="group">
                             <button type="button" class="btn btn-danger">
-                                <a href="javascript:;" style="text-decoration: none; color: white" 
+                                <a href="javascript:;" class="text-decoration-none txt-white"
                                    onclick="deleteProduct(${p.product_id})">Xóa</a>
                             </button>
                             <button type="button" class="btn btn-success">
-                                <a style="text-decoration: none; color: white"
+                                <a class="text-decoration-none txt-white"
                                    href="<c:url value="/admin/update-product" />/?productId=${p.product_id}">Cập nhật</a>
                             </button>
                         </div>
